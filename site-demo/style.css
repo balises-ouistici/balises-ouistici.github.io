@@ -3,6 +3,8 @@
     --main-bg-color:rgb(238, 238, 225);
     --dark-bg-color: rgb(8, 8, 8);
     --dark-color: rgb(15, 15, 15);
+    --light-color: #ccc;
+    --grey-color: #565f68;
   }
   
 * {
@@ -12,33 +14,37 @@
 }
 
 @font-face {
-    font-family: "Millimetre";
+    font-family: Millimetre;
     src: url("assets/fonts/millimetre/Millimetre-Bold_web.eot"),
     url("assets/fonts/millimetre/Millimetre-Bold_web.woff") format("woff"),
     url("assets/fonts/millimetre/Millimetre-Bold_web.otf") format("opentype"),
     url("assets/fonts/millimetre/Millimetre-Bold_web.svg") format("svg");
-    
-    }
-@font-face {
-    font-family: "SpaceMono";
-    src: url("assets/fonts/spacemono/SpaceMono-Regular.ttf");
-    }
-@font-face {
-    font-family: "SpaceMono";
-    src: url("assets/fonts/spacemono/SpaceMono-Bold.ttf");
     font-weight: bold;
     }
 @font-face {
-    font-family: "SpaceMono";
-    src: url("assets/fonts/spacemono/SpaceMono-Italic.ttf");
+    font-family: SpaceMono;
+    src: url("assets/fonts/spacemono/SpaceMono-BoldItalic.ttf") format("truetype");
     font-style: italic, oblique;
-    }
-@font-face {
-    font-family: "SpaceMono";
-    src: url("assets/fonts/spacemono/SpaceMono-BoldItalic.ttf");
     font-weight: bold;
+}
+    @font-face {
+    font-family: SpaceMono;
+    src: url("assets/fonts/spacemono/SpaceMono-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: SpaceMono;
+    src: url("assets/fonts/spacemono/SpaceMono-Italic.ttf") format("truetype");
     font-style: italic, oblique;
-    }
+    font-weight: normal;
+}
+@font-face {
+    font-family: SpaceMono;
+    src: url("assets/fonts/spacemono/SpaceMono-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
     
 /*
  * -- BASE STYLES --
@@ -49,6 +55,8 @@ body {
     color: var(--dark-color);
     font-size: 13px;
     font-family: "SpaceMono", monospace, sans-serif;
+    font-style: normal;
+    font-weight: normal;
 }
 
 h1,
@@ -58,7 +66,7 @@ h4,
 h5,
 h6,
 label {
-    color: #34495e;
+    color: var(--grey-color);
     font-family: 'Millimetre' ;
 }
 
@@ -131,32 +139,42 @@ a.button-splash {
  */
 
 .home-menu {
-    padding: 0.5em;
+    padding: 0 0.5em;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     /* box-shadow: 0 1px 1px rgba(0,0,0, 0.10); */
-}
-.home-menu {
     background: var(--main-bg-color);
+    padding: .1em 1em;
 }
 .pure-menu.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
     border-bottom: none;
     /* I need a higher z-index here because of the scroll-over effect. */
     z-index: 4;
+    
 }
 
 .home-menu .pure-menu-heading {
     color: white;
     font-weight: 400;
     font-size: 120%;
+    padding:0;
 }
 
 .home-menu .pure-menu-selected a {
     color: white;
 }
 
+.home-menu .pure-menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
 .home-menu a {
-    color: #6FBEF3;
+    color: var(--dark-color);
 }
 .home-menu li a:hover,
 .home-menu li a:focus {
@@ -241,7 +259,8 @@ a.button-splash {
 
 /* This is the class used for the content sub-headers (<h3>) */
 .content-subhead {
-    color: #1f8dd6;
+    color: var(--dark-color);
+    border-bottom: solid 2px grey;
 }
     .content-subhead i {
         margin-right: 7px;
@@ -250,12 +269,13 @@ a.button-splash {
 /* This is the class used for the dark-background areas. */
 .ribbon {
     background: var(--dark-bg-color);
-    color: #aaa;
+    color: var(--light-color);
 }
 
 /* This is the class used for the footer */
 .footer {
-    background: #111;
+    background: var(--dark-bg-color);
+    color: var(--light-color);
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -267,38 +287,30 @@ a.button-splash {
  * of the mobile styles.
  */
 @media (min-width: 48em) {
-
     /* We increase the body font size */
     body {
         font-size: 16px;
     }
-
     /* We can align the menu header to the left, but float the
     menu items to the right. */
     .home-menu {
         text-align: left;
     }
-        .home-menu ul {
-            float: right;
-        }
-
+    /* .home-menu ul {
+        } */
     /* We increase the height of the splash-container */
-/*    .splash-container {
+    /* .splash-container {
         height: 500px;
     }*/
-
     /* We decrease the width of the .splash, since we have more width
     to work with */
     .splash {
         width: 50%;
         height: 50%;
     }
-
     .splash-head {
         font-size: 250%;
     }
-
-
     /* We remove the border-separator assigned to .l-box-lrg */
     .l-box-lrg {
         border: none;
@@ -318,8 +330,8 @@ a.button-splash {
     }
 }
 
-#balises:target,#hackaton:target, #ouistici:target { scroll-margin-top: 45px; }
-#balises:target,#reu-info-hackaton:target{ scroll-margin-top: 140px; }
+#hackaton:target, #ouistici:target, #inscription:target { scroll-margin-top: 45px; }
+#balises:target, #reu-info-hackaton:target{ scroll-margin-top: 140px; }
 
 .footer a{
     color: #1f8dd6;
@@ -379,10 +391,8 @@ img.logos{
 }
 
 img.header-logo{
-    position: absolute;
-    
-    max-height: 3em;
-    top: 1em;
+    max-height: 3.5em;
+    padding: .5em 1em 0.1em 1em;
 }
 
 .stabilo
@@ -402,6 +412,10 @@ img.header-logo{
     white-space: nowrap;
 }
 
-.ribbon img{
+.ribbon img.wauto{
     overflow: hidden;
+    width: 100%;
+}
+.w150{
+    width: 150px;
 }
