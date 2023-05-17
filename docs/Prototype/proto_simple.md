@@ -1,4 +1,4 @@
-# Balise Prototype CC1101
+# Prototype simple
 
 ## Matériel nécessaire
 
