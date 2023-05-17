@@ -414,7 +414,7 @@ img.header-logo{
 
 .ribbon img.wauto{
     overflow: hidden;
-    width: 100%;
+    max-width: 100%;
 }
 .w150{
     width: 150px;
