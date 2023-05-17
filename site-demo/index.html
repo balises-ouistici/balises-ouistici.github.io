@@ -29,6 +29,7 @@
 
 <div class="splash-container">
     <div class="splash">
+        <p>bienvenue sur le site </p>
         <h1 class="splash-head">Balises Ouistici</h1>
         <p class="splash-subhead">
             des balises sonores libres et open-source pour rendre la ville plus accessible
@@ -165,9 +166,9 @@
                     Nos partenaires
                 </h3>
                 <p>
-                    <img class="logos" alt="Fondation Orange" title="Fondation Orange" src="assets/logos/fondation-orange.jpg" />
+                    <img class="logos" alt="Fondation Orange" title="Fondation Orange" src="assets/logos/fondation-orange.png" />
                     <img class="logos" alt="Microlycée LIANE" title="Microlycée LIANE" src="assets/logos/liane.png" />
-                    <img class="logos" alt="CRDV Itinova" title="CRDV Itinova" src="assets/logos/itinova.jpg" />
+                    <img class="logos" alt="CRDV Itinova" title="CRDV Itinova" src="assets/logos/itinova.png" />
                     <img class="logos" alt="Projet COMPAS du LIMOS" title="Projet COMPAS du LIMOS" src="assets/logos/compas.png" />
                     <img class="logos" alt="Fablab Sigmake" title="Fablab Sigmake" src="assets/logos/sigmake.png" />
                     <img class="logos" alt="Clermont Innovation Week" title="Clermont Innovation Week" src="assets/logos/ciw23.png" />
@@ -206,7 +207,7 @@
                 <i class="fa-solid fa-camera"></i>
                 Quelques images
             </h2>            
-            <img class="wauto" src="assets/logos/compas.png"/>
+            <img style="width:330px" alt="prototype installé devant l'entrée du fablab des Petits Débrouillards" class="wauto" src="assets/balise Ouistici proto trame.png"/>
         </div>
     </div>
     
@@ -267,7 +268,7 @@
                 <p>
                     vendredi 9 juin :
                     <ul>
-                        <li>17h00-22h : Accueil, formation des équipes et premiers travaux</li>
+                        <li>17h-22h : Accueil, formation des équipes et premiers travaux</li>
                     </ul>
                     samedi 10 juin : 
                     <ul>
@@ -346,112 +347,137 @@
     </div>
 
     <div class="content" id="inscription">
-        <h2 class="content-head is-center">Inscription au Hackaton (9-10-11 juin)</h2>
-        <!-- <div class="pure-g"> -->
-        <div class="pure-u-1 l-box">
-
-            <form class="pure-form pure-form-stacked" form method="post" action="submit.php">
-              <fieldset>
-                <legend>Vos coordonnées</legend>
-                <div class="pure-g">
-                  <div class="pure-u-1 pure-u-md-1-2">
-                      <label for="prenom">Prénom :</label>
-                      <input id="prenom" type="text" name="prenom" class="pure-u-20-24">
-                  </div>
-                  <div class="pure-u-1 pure-u-md-1-2">
-                    <label for="nom">Nom :</label>
-                    <input id="nom" type="text" name="nom" class="pure-u-20-24">
-                  </div>
-                  <div class="pure-u-1 pure-u-md-1-2">
-                    <label for="email">Email :</label>
-                    <input id="email" type="text" name="email" class="pure-u-20-24">
-                  </div>
-                  <div class="pure-u-1 pure-u-md-1-2">
-                    <label for="telephone">Téléphone :</label>
-                    <input id="telephone" type="text" name="telephone" class="pure-u-20-24">
-                  </div>
-                </div>
-              </fieldset>
-              <fieldset>
-                <legend>Votre participation</legend>
-                <div class="pure-g">
-                <div class="pure-u-1 pure-u-md-1-2">
-                <p>Dites nous en un peu plus sur vous et la façon dont vous voulez participer. Cela permettra </p>
-                <label for="profil">Êtes-vous :</label>
-                <div class="pure-checkbox">
-                  <label for="profil-balises"><input id="profil-balises" type="checkbox" name="profil" value="balises">Usager ou usagère des balises sonores</label>
-                  <label for="developpeur"><input id="developpeur" type="checkbox" name="profil" value="developpeur">Développeur ou développeuse</label>
-                  <label for="maker"><input id="maker" type="checkbox" name="profil" value="maker">Maker / makeuse bricoleur / bricoleuse</label>
-                  <label for="maker"><input id="maker" type="checkbox" name="profil" value="maker">Electronicienne ou électronicien</label>
-                  <label for="maker"><input id="maker" type="checkbox" name="profil" value="professionnel">Professionnel</label>
-                  <label for="maker"><input id="maker" type="checkbox" name="profil" value="etudiant">Étudiante / étudiant</label>
-                  <label for="profil-autre"><input id="profil-autre" type="checkbox" name="profil" value="autre">Autre :</label>
-                  <input id="profil-autre-text" type="text" name="profil-autre-text" class="pure-u-16-24">
-                </div>
+      <h2 class="content-head is-center">Inscription au Hackaton (9-10-11 juin)</h2>
+      <!-- <div class="pure-g"> -->
+      <div class="pure-u-1 l-box">
+        <form class="pure-form pure-form-stacked" form method="post" action="submit.php">
+          <fieldset>
+            <legend>Vos coordonnées</legend>
+            <div class="pure-g">
+              <div class="pure-u-1 pure-u-md-1-2">
+                  <label for="prenom">Prénom :</label>
+                  <input id="prenom" type="text" name="prenom" class="pure-u-20-24" required>
               </div>
-                <div class="pure-u-1 pure-u-md-1-2">
-                <p>Qu'est ce qui vous intéresserait e travailler pend</p>
-                <label for="interets">Les domaines qui vous intéressent dans le projet :</label>
+              <div class="pure-u-1 pure-u-md-1-2">
+                <label for="nom">Nom :</label>
+                <input id="nom" type="text" name="nom" class="pure-u-20-24" required>
+              </div>
+              <div class="pure-u-1 pure-u-md-1-2">
+                <label for="email">Email :</label>
+                <input id="email" type="email" name="email" class="pure-u-20-24" required>
+              </div>
+              <div class="pure-u-1 pure-u-md-1-2">
+                <label for="telephone">Téléphone :</label>
+                <input id="telephone" type="number" name="telephone" class="pure-u-20-24" required>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Votre participation</legend>
+            <div class="pure-g">
+              <div class="pure-u-1 pure-u-md-1-2">
+                <p>Utilisez-vous les balises sonores ou les feux sonores pour vous orienter ou vous informer :</p>
+                <div class="pure-radio">
+                  <label for="usager-balises-oui"><input id="usager-balises-oui" type="radio" name="usager-balises" value="oui" required>Oui, j'utilise les balises sonores</label>
+                  <label for="usager-balises-non"><input id="usager-balises-non" type="radio" name="usager-balises" value="non" required>Non</label>
+                </div>
+                <p>Dites nous en un peu plus sur vous et la façon dont vous pensez participer. Il s'agit pour nous de savoir un peu d'où vous venez.</p>
+                <label for="profil">D'où venez-vous :</label>
+                  <div class="pure-checkbox">
+                  <label for="maker"><input id="maker" type="checkbox" name="profil[]" value="maker">Fabrication, construction</label>
+                  <label for="maker"><input id="maker" type="checkbox" name="profil[]" value="maker">Électronique</label>
+                  <label for="maker"><input id="maker" type="checkbox" name="profil[]" value="etudiant">Informatique</label>
+                  <label for="maker"><input id="maker" type="checkbox" name="profil[]" value="maker">Santé / Social</label>
+                  <label for="maker"><input id="maker" type="checkbox" name="profil[]" value="maker">Accessibilité</label>
+                  <label for="maker"><input id="maker" type="checkbox" name="profil[]" value="maker">Territoires / Collectivités</label>
+                  <label for="maker"><input id="maker" type="checkbox" name="profil[]" value="etudiant">Géographie</label>
+                  <label for="maker"><input id="maker" type="checkbox" name="profil[]" value="etudiant">Arts, arts plastiques</label>
+                  <label for="profil-autre">Autre domaine(s) :</label>
+                  <input id="profil-autre" type="text" name="profil-autre" class="pure-u-16-24">
+                </div>
+                <p>Un petit mot pour nous dire qui vous êtes (makereuse, étudiante en informatique ou en géographie, motivée par l'installation de balises pour votre usage, développeur, radio-amateurice, professionnelle de la santé, passionnée d'urbanisme, intéressé par l'accessibilité des espaces communs ...) ? Pourquoi venez-vous ?</p>
+                <label for="quisuisje">Qui êtes-vous, pourquoi participer :</label>
+                <textarea id="quisuisje" name="quisuisje" class="pure-u-16-24" required></textarea>
+              </div>
+              <div class="pure-u-1 pure-u-md-1-2">
+                <label for="interets">Les façons de participer (plus ou moins technique) qui vous intéressent le plus :</label>
                 <div class="pure-checkbox">
-                  <label for="interets-accessibilite"><input id="interets-accessibilite" type="checkbox" name="interets" value="accessibilite">Accessibilité</label>
-                  <label for="interets-applications"><input id="interets-applications" type="checkbox" name="interets" value="applications">Applications pour les personnes illettrées ou allophones</label>
-                  <label for="interets-geographie"><input id="interets-geographie" type="checkbox" name="interets" value="geographie">Géographie</label>
-                  <label for="interets-installation-urbaine"><input id="interets-installation-urbaine" type="checkbox" name="interets" value="installation-urbaine">Installation urbaine</label>
-                  <label for="interets-installation-sonore"><input id="interets-installation-sonore" type="checkbox" name="interets" value="installation-sonore">Installation sonore dans le bâtiment du Lieu-Dit</label>
-                  <label for="interets-installation-sonore"><input id="interets-installation-electronique" type="checkbox" name="interets" value="installation-electronique">Electronique</label>
-                  <label for="interets-installation-sonore"><input id="interets-installation-programmation" type="checkbox" name="interets" value="installation-programmation">Programmation et logiciel embarqué</label>
-                  <label for="interets-autre"><input id="interets-autre" type="checkbox" name="interets" value="autre">Autre :</label>
+
+                  <label for="interets-installation-urbaine"><input id="interets-installation-urbaine" type="checkbox" name="interets" value="installation-urbaine">Identifier des lieux clés ou importants à équiper (enquêtes, cartographie)</label>
+                  <label for="interets-installation-urbaine"><input id="interets-installation-urbaine" type="checkbox" name="interets" value="installation-urbaine">Produire des éléments (jingles, documentation, guide pour l'enregistrement de messages)</label>
+                  <label for="interets-installation-sonore"><input id="interets-installation-programmation" type="checkbox" name="interets" value="installation-programmation">Explorer des cadres d'usages nouveaux (installations temporaires par exemple)</label>
+                  <label for="interets-installation-sonore"><input id="interets-installation-sonore" type="checkbox" name="interets" value="installation-sonore">Expérimenter une insallation à l'échelle de quelques rues</label>
+                  <label for="interets-installation-urbaine"><input id="interets-installation-urbaine" type="checkbox" name="interets" value="installation-urbaine">Travailler sur des questions sociales et de géographie : les sons de la ville ?</label>
+                  <label for="interets-installation-sonore"><input id="interets-installation-electronique" type="checkbox" name="interets" value="installation-electronique">Améliorer les plans (électronique, radio, logiciel embarqué)</label>
+                  <label for="interets-installation-sonore"><input id="interets-installation-electronique" type="checkbox" name="interets" value="installation-electronique">Ajouter des fonctionnalités (connectivité, adaptation du niveau sonore, alimentation..)</label>
+                  <label for="interets-applications"><input id="interets-applications" type="checkbox" name="interets" value="applications">Tester des applications nouvelles (sortie de secours par exemple)</label>
+                  <label for="interets-installation-urbaine"><input id="interets-installation-urbaine" type="checkbox" name="interets" value="installation-urbaine">Je ne sais pas encore</label>
+                  <label for="interets-autre"><input id="interets-autre" type="checkbox" name="interets" value="autre">Autre chose :</label>
                   <input id="interets-autre-text" type="text" name="interets-autre-text" class="pure-u-16-24">
                 </div>
               </div>
             </div>
-                <label for="attentes">Vos attentes pour le weekend :</label>
-                <textarea id="attentes" name="attentes" class="pure-u-16-24"></textarea>
-                <label for="apports">Ce que vous pouvez apporter, partager :</label>
-                <textarea id="apports" name="apports" class="pure-u-16-24"></textarea>
-                <label for="peurs">Ce qui pourrait vous faire peur :</label>
-                <textarea id="peurs" name="peurs" class="pure-u-16-24"></textarea>
-                <p>Nous avons donné des exemples de sujets pour le hackaton (plus haut). 
-                  Y en-a-t'il qui vous intéresse particulièrement ? Avez vous des idées de sujets à explorer ?
-                (il n'y a pas d'obligation à choisir un sujet maintenant, et les sujets seront affinés en équipe) </p>
-                <label for="sujet-prefere">Un sujet qui m'intéresse en particulier :</label>
-                <textarea id="sujet-prefere" name="sujet-prefere" class="pure-u-16-24"></textarea>
-                <label for="propositions-sujets">D'autres propositions de sujets :</label>
-                <textarea id="propositions-sujets" name="propositions-sujets" class="pure-u-16-24"></textarea>
-                
-              </fieldset>
-              <fieldset>
-                  <legend>Questions logistiques</legend>
-                <label for="hebergement">Hébergement :</label>
-                <div class="pure-checkbox">
-                  <label for="hebergement-besoin"><input id="hebergement-besoin" type="checkbox" name="besoin-hebergement" value="oui">J'ai besoin d'hébergement à Clermont-Ferrand</label>
-                </div>
-                <div class="pure-checkbox">
-                  <label for="heberger-possible"><input id="heberger-possible" type="checkbox" name="heberger-possible" value="oui">Je peux héberger une personne à Clermont-Ferrand</label>
-                </div>
-                <p>Les repas sont compris, du vendredi soir au dimanche midi. Nous prévoyons aussi des collations pour les petits déjeuners (samedi et dimanche).
-                Nous vous demandons une participation aux frais pour les repas.</p>
-                <p>Cette participation fait aussi office de réservation. (??)</p>
-                
-                <label for="infos-repas">Informations pour les repas (allergie, intolérence, régime particulier...) :</label>
-                <input id="infos-repas" type="text" name="infos-repas" class="pure-u-16-24">
-                <label for="tarif-paf">Participation aux frais :</label>
-                <div class="pure-radio">
-                  <label for="tarif-plein"><input id="tarif-plein" type="radio" name="tarif-paf" value="plein">Tarif plein (50€)</label>
-                  <label for="tarif-reduit"><input id="tarif-reduit" type="radio" name="tarif-paf" value="reduit">Tarif réduit (25€)</label>
-                </div>
-              </fieldset>
-              <fieldset>
-                <legend>Remarques et fin de votre inscription</legend>
-              <p>Pour finir, si vous avez des remarques ou des questions, c'est possible de les noter ici.</p>
-                <label for="remarques">Remarques /questions :</label>
-                <textarea id="remarques" name="remarques" class="pure-u-16-24"></textarea>
-              </fieldset>
-                <button type="submit" class="pure-button pure-button-primary">Valider mon inscription</button>
-            </form>
-            <!-- <?php include 'submit.php'; ?> -->
+            <label for="attentes">Vos attentes pour le weekend :</label>
+            <textarea id="attentes" name="attentes" class="pure-u-16-24" required></textarea>
+            <label for="apports">Ce que vous pouvez apporter, partager :</label>
+            <textarea id="apports" name="apports" class="pure-u-16-24" required></textarea>
+            <label for="peurs">Ce qui pourrait vous faire peur :</label>
+            <textarea id="peurs" name="peurs" class="pure-u-16-24"></textarea>
+            <p>Nous avons donné des exemples de sujets pour le hackaton (plus haut). 
+              Y en-a-t'il qui vous intéresse particulièrement ? Avez vous des idées de sujets à explorer ?
+            (il n'y a pas d'obligation à choisir un sujet maintenant, et les sujets seront affinés en équipe) </p>
+            <label for="sujet-prefere">Un sujet qui m'intéresse en particulier :</label>
+            <textarea id="sujet-prefere" name="sujet-prefere" class="pure-u-16-24"></textarea>
+            <label for="propositions-sujets">D'autres propositions de sujets :</label>
+            <textarea id="propositions-sujets" name="propositions-sujets" class="pure-u-16-24"></textarea>
+          </fieldset>
+          <fieldset>
+            <legend>Questions logistiques</legend>
+            <p>Hébergement :</p>
+            <div class="pure-checkbox">
+              <label for="hebergement-besoin"><input id="hebergement-besoin" type="checkbox" name="besoin-hebergement" value="oui">J'ai besoin d'hébergement à Clermont-Ferrand</label>
+            </div>
+            <div class="pure-checkbox">
+              <label for="heberger-possible"><input id="heberger-possible" type="checkbox" name="heberger-possible" value="oui">Je peux héberger une personne à Clermont-Ferrand</label>
+            </div>
+            <p>Les repas sont compris, du vendredi soir au dimanche midi. Nous prévoyons aussi des collations pour les petits déjeuners (samedi et dimanche).
+            Nous vous demandons une participation aux frais pour les repas.</p>
+            
+            <label for="infos-repas">Informations pour les repas (allergie, intolérence, régime particulier...) :</label>
+            <input id="infos-repas" type="text" name="infos-repas" class="pure-u-16-24">
+            <p>Participation aux frais :</p>
+            <div class="pure-radio">
+              <label for="tarif-plein"><input id="tarif-plein" type="radio" name="tarif-paf" value="plein" required>Tarif plein (50€)</label>
+              <label for="tarif-reduit"><input id="tarif-reduit" type="radio" name="tarif-paf" value="reduit" required>Tarif réduit (25€)</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Partage de vos coordonnées, droit à l'image, licence des productions :</legend>
+            <p>Le partage de vos coordonnées personnelles auprès des autres participantes et participants peut être utile pour se retrouver, en cas de besoin d'hébergement. Mais vous pouvez vous y opposer sans soucis.</p>
+            <div class="pure-checkbox">
+              <label for="partage-coordonnees"><input id="partage-coordonnees" type="checkbox" name="partage-coordonnees" value="oui" checked>J'accepte de partager mes coordonnées avec les autres participantes et participants au hackaton.</label>
+            </div>
+            <p>Quelques photos pourront être prises pendant le hackaton, pour communiquer sur le projet de balises sonores Ouistici, sur le hackaton, les travaux réalisés. Ces photos pourront être diffusées sur le site internet, sur les réseaux sociaux, sur papier, éventuellement transmises à la presse. Mais vous pouvez vous opposer à l'utilisation de votre image sans soucis.</p>
+            <div class="pure-checkbox">
+              <label for="droit-image"><input id="droit-image" type="checkbox" name="droit-image" value="oui" checked>J'accepte d'être prise ou pris en photo durant le week-end du hackaton, pour être éventuellement utilisée dans le cadre de la communication autour du projet et du hackaton.</label>
+            </div>
             <p></p>
-        </div>
+            En vous inscrivant, vous acceptez que les productions des équipes (plans, dessins, programme, sons...) soient partagées sous des licences libres : type GPL ou MIT pour le code, type CreativeCommons pour les contenus (multi)médias. Ainsi, les productions sont attribuées aux personnes de l'équipe, mais la réutilisation, la modification, le partage sont autorisés.
+            <div class="pure-checkbox">
+                <label for="licence"><input id="licence" type="checkbox" name="licence" value="oui" checked disabled>J'accepte que les productions réalisées pendant le hackaton soient partagées sous licences libres.</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Remarques et fin de votre inscription</legend>
+            <p>Pour finir, si vous avez des remarques ou des questions, c'est possible de les noter ici.</p>
+            <label for="remarques">Remarques /questions :</label>
+            <textarea id="remarques" name="remarques" class="pure-u-16-24"></textarea>
+          </fieldset>
+          <button type="submit" class="pure-button pure-button-primary">Valider mon inscription</button>
+        </form>
+        <!-- <?php include 'submit.php'; ?> -->
+        <p></p>
+      </div>
     </div>
 
 
