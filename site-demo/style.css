@@ -1,8 +1,8 @@
 :root{
-    --splash-bg-color: rgb(238, 238, 225);
-    --main-bg-color:rgb(238, 238, 225);
-    --dark-bg-color: rgb(8, 8, 8);
-    --dark-color: rgb(15, 15, 15);
+    --splash-bg-color: #eeeee1;
+    --main-bg-color:#eeeee1;
+    --dark-bg-color: #080808;
+    --dark-color: #0f0f0f;
     --light-color: #ccc;
     --grey-color: #565f68;
   }
@@ -119,19 +119,33 @@ label {
  * I want my pure-button elements to look a little different
  */
 .pure-button {
-    background-color: #1f8dd6;
+    /* background-color: #1f8dd6; */
+    /* background-color: var(--dark-color); */
     color: white;
     padding: 0.5em 2em;
     border-radius: 5px;
 }
 
 a.button-splash {
-    background: white;
-    color: #1f8dd6;
+    background-color: none;
+    color: var(--dark-bg-color);
     border-radius: 5px;
-    font-size: 120%;
+    font-size: 122%;
+    font-weight: normal;
+    text-decoration:underline;
+    border: var(--dark-color) solid 2px;
 }
-
+a.button-splash:hover,
+a.button-splash:focus {
+    border: #1f8dd6 solid 2px;
+    background-image:none;
+    background: var(--splash-bg-color);
+    /* color: var(--grey-color); */
+    /* opacity: 0.7; */
+}
+a.button-splash:focus {
+    border: #1f8dd6 solid 2px;
+}
 
 /*
  * -- MENU STYLES --
@@ -207,7 +221,13 @@ a.button-splash {
     position: relatsive;
     top: 100px; left: 0; bottom: 0; right: 0;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+}
+
+.splash h1{
+    font-size: 2.5em;
+    letter-spacing: 0.05em;
+    line-height: 1em;
 }
 
 /* This is the main heading that appears on the blue section */
@@ -238,11 +258,11 @@ a.button-splash {
     min-height: 12%;
     z-index: 2;
     background: var(--main-bg-color);
-
+    padding-bottom: 6em;
 }
 /* We want to give the content area some more padding */
 .content {
-    padding: 1em 1em 2em;
+    padding: 1em 1em 3em;
 }
 /* This is the class used for the main content headers (<h2>) */
 .content-head {
@@ -315,7 +335,9 @@ a.button-splash {
     .l-box-lrg {
         border: none;
     }
-
+    .content-wrapper {
+        padding-bottom: 2em;
+    }
 }
 
 /*
@@ -343,7 +365,7 @@ a.button-splash {
 }
 
 .button-splash {
-    max-width: 380px;
+    max-width: 400px;
     white-space: break-spaces;
 }
 .button-large {
@@ -415,6 +437,9 @@ img.header-logo{
 .ribbon img.wauto{
     overflow: hidden;
     max-width: 100%;
+}
+.ribbon h3{
+    color: #efefef ;
 }
 .w150{
     width: 150px;
