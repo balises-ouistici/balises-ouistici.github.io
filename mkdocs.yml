@@ -1,3 +1,5 @@
 site_name: Balises Sonores Ouistici
 site_url: https://balises-sonores.github.io/
 theme: readthedocs
+locale: fr
+lang: fr
