@@ -5,6 +5,7 @@
     --dark-color: #0f0f0f;
     --light-color: #ccc;
     --grey-color: #565f68;
+    --dark-blue: #004585;
   }
   
 * {
@@ -206,11 +207,12 @@ a.button-splash:focus {
 .splash-container {
     background: var(--splash-bg-color);
     z-index: 1;
-    padding-top:100px;
+    padding-top:125px;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
     width: 100%;
     height: calc( 100vh - 45px );
+    min-height: 420px;
 }
 
 .splash {
@@ -319,9 +321,10 @@ a.button-splash:focus {
     /* .home-menu ul {
         } */
     /* We increase the height of the splash-container */
-    /* .splash-container {
-        height: 500px;
-    }*/
+    .splash-container {
+/*         height: 500px; */
+        padding-top:100px;
+    }
     /* We decrease the width of the .splash, since we have more width
     to work with */
     .splash {
@@ -352,8 +355,19 @@ a.button-splash:focus {
     }
 }
 
-#hackaton:target, #ouistici:target, #inscription:target { scroll-margin-top: 45px; }
-#balises:target, #reu-info-hackaton:target{ scroll-margin-top: 140px; }
+#hackaton:target, #ouistici:target, #inscription:target { scroll-margin-top: 100px; }
+#balises:target, #reu-info-hackaton:target{ scroll-margin-top: 180px; }
+
+
+@media (min-width: 78em) {
+    #hackaton:target, #ouistici:target, #inscription:target { scroll-margin-top: 40px; }
+    #balises:target, #reu-info-hackaton:target{ scroll-margin-top: 135px; }
+}
+
+@media (min-width: 48em) {
+    #hackaton:target, #ouistici:target, #inscription:target { scroll-margin-top: 40px; }
+    #balises:target, #reu-info-hackaton:target{ scroll-margin-top: 135px; }
+}
 
 .footer a{
     color: #1f8dd6;
@@ -390,7 +404,7 @@ a.button-splash:focus {
     /* text-decoration-color: black; */
 }
 .content a.pure-link{
-    color: #1f8dd6;
+    color: var(--dark-blue);
     text-decoration: none;
     /* text-decoration-color: black; */
 }
@@ -443,4 +457,8 @@ img.header-logo{
 }
 .w150{
     width: 150px;
+}
+
+.pure-button-primary, a.pure-button-primary{
+    background-color: var(--dark-blue);
 }
