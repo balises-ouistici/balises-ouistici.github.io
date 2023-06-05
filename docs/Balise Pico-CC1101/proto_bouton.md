@@ -1,4 +1,4 @@
-# Balise Pico-CC1101 simple
+# Balise Pico-CC1101 bouton
 
 ## Matériel nécessaire
 

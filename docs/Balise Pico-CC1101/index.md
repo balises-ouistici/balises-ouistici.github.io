@@ -7,9 +7,10 @@ Trois modèles :
 - [Modèle avec bouton et message alternatif](proto_bouton_inter.md)
 
 ## TO-DO
+Points d'amélioration / Fonctionnalités supplémentaires
 
 - lire les sons depuis une carte SD pour augmenter les capacités de stockage
-- utiliser de carte avec une méméoire plus importante pour augmenter les capacités de stockage
+- utiliser de carte avec une mémoire plus importante pour augmenter les capacités de stockage
 - ...
 - mode de communication entre 2 balises pour avertir la voisine qu'un signal a été reçu
 - ...
