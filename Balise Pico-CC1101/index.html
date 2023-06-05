@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://balises-sonores.github.io/Prototype/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://balises-sonores.github.io/Balise%20Pico-CC1101/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Balise Prototype CC1101 - Balises Sonores Ouistici</title>
+    <title>Balise Pico-CC1101 - Balises Sonores Ouistici</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Balise Prototype CC1101";
-        var mkdocs_page_input_path = "Prototype/index.md";
-        var mkdocs_page_url = "/Prototype/";
+        var mkdocs_page_name = "Balise Pico-CC1101";
+        var mkdocs_page_input_path = "Balise Pico-CC1101/index.md";
+        var mkdocs_page_url = "/Balise%20Pico-CC1101/";
       </script>
     
     <script src="../js/jquery-3.6.0.min.js" defer></script>
@@ -44,9 +44,18 @@
                 <li class="toctree-l1"><a class="reference internal" href="..">OUISTICI</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../traitement_sons/">Traitement des sons</a>
-                </li>
+              <p class="caption"><span class="caption-text">Balise Pico CC1101</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Balise Pico-CC1101</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#to-do">TO-DO</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="proto_bouton/">Balise Pico-CC1101 simple</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="proto_simple/">Balise Pico-CC1101 simple</a>
+                  </li>
               </ul>
               <p class="caption"><span class="caption-text">Balise RTL SDR</span></p>
               <ul>
@@ -58,15 +67,11 @@
                   <li class="toctree-l1"><a class="reference internal" href="../Club%20Microlyc%C3%A9e/">CLub Microlycée</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Prototype</span></p>
-              <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Balise Prototype CC1101</a>
-    <ul class="current">
-    </ul>
+              <p class="caption"><span class="caption-text">Recettes</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../recettes/circuitpython/">Configurer un microcontrôleur Pico pour programmer avec CircuitPython</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="proto_bouton/">Prototype avec bouton</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="proto_simple/">Prototype simple</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../recettes/traitement_sons/">Traitement des sons</a>
                   </li>
               </ul>
       </div>
@@ -83,8 +88,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
-          <li>Prototype &raquo;</li>
-      <li>Balise Prototype CC1101</li>
+          <li>Balise Pico CC1101 &raquo;</li>
+      <li>Balise Pico-CC1101</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -93,19 +98,27 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="balise-prototype-cc1101">Balise Prototype CC1101</h1>
+                <h1 id="balise-pico-cc1101">Balise Pico-CC1101</h1>
 <p>Trois modèles :</p>
 <ul>
-<li><a href="proto_simple">Modèle simple</a>, sans bouton ni message alternatif</li>
-<li><a href="proto_bouton">Modèle avec bouton</a>, sans message alternatif</li>
-<li><a href="proto_bouton_inter">Modèle avec bouton et message alternatif</a></li>
+<li><a href="proto_simple/">Modèle simple</a>, sans bouton ni message alternatif</li>
+<li><a href="proto_bouton/">Modèle avec bouton</a>, sans message alternatif</li>
+<li><a href="proto_bouton_inter.md">Modèle avec bouton et message alternatif</a></li>
+</ul>
+<h2 id="to-do">TO-DO</h2>
+<ul>
+<li>lire les sons depuis une carte SD pour augmenter les capacités de stockage</li>
+<li>utiliser de carte avec une méméoire plus importante pour augmenter les capacités de stockage</li>
+<li>...</li>
+<li>mode de communication entre 2 balises pour avertir la voisine qu'un signal a été reçu</li>
+<li>...</li>
 </ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../Club%20Microlyc%C3%A9e/" class="btn btn-neutral float-left" title="CLub Microlycée"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="proto_bouton/" class="btn btn-neutral float-right" title="Prototype avec bouton">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href=".." class="btn btn-neutral float-left" title="OUISTICI"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="proto_bouton/" class="btn btn-neutral float-right" title="Balise Pico-CC1101 simple">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -129,7 +142,7 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../Club%20Microlyc%C3%A9e/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
       <span><a href="proto_bouton/" style="color: #fcfcfc">Next &raquo;</a></span>
