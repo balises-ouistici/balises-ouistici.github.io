@@ -1,19 +1,17 @@
-# OUISTICI
+# Balises sonores Ouistici
 
-## questions
+Bienvenue sur la documentation des balises libres et open-source Ouistici.
 
-- comment la personne qui arrive peut savoir qu'il existe une balise sonore proche (que tel lieu est équipé) ?
--> la balise indique sa présence (par vibration de la télécommande)
+Les prototypes sont rangés en plusieurs familles :
 
-- deux balises ou plus pour donner une direction : une au coin et une vers la porte, qui se partage le message pour donner une direction. 
-	ex:  "Oui" (balise1)... "C'est"(balise2)... "Ici"(balise3) (voir cette vidéo)
-
-- informations audio : sources possibles : message enregistré / wifi + synthèse vocale / donner 
--> lire un son distant (wifi ? pour éviter )
-
--> deuxieme appel de télécommande avec un délai, pour avoir plus d'infos appuyez sur le bouton ROUGE.
+- des balises qui utilisent le module radio CC1101 et un microcontrôleur (type Arduino ou Raspberry Pico)
+- des balises qui utilisent le module radio usb RTL-SDR et un ordinateur (éventuellement un petit ordinateur Raspberry Pi)
 
 
 ## Ressources 
+
 - [La balise sonore en questions](https://www.ecologie.gouv.fr/sites/default/files/DMA-La%20balise%20sonore%20en%20questions%20.pdf) (Délégation ministérielle à l'accessibilité, 2018)
 - 
+
+## Questions
+voir [ici](questions.md)

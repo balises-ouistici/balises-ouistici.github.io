@@ -15,7 +15,7 @@
 ## Programme
 
 Les sources sont ici : 
-https://github.com/balises-ouistici/circuitpython-nfs32002
+[github.com/balises-ouistici/circuitpython-nfs32002](https://github.com/balises-ouistici/circuitpython-nfs32002)
 
 1. Télécharger les scripts Python sur votre Pico
 2. Préparer le Pico pour le programmer en CircuitPython (voir [la recette ici](../recettes/circuitpython.md))
