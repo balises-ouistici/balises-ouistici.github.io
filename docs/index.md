@@ -10,8 +10,10 @@ Les prototypes sont rangés en plusieurs familles :
 
 ## Ressources 
 
+
 - [La balise sonore en questions](https://www.ecologie.gouv.fr/sites/default/files/DMA-La%20balise%20sonore%20en%20questions%20.pdf) (Délégation ministérielle à l'accessibilité, 2018)
-- 
+- [CC1101 Datasheet](https://www.ti.com/lit/ds/symlink/cc1101.pdf)
+
 
 ## Questions
 voir [ici](questions.md)
