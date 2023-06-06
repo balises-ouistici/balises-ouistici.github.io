@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://balises-sonores.github.io/recettes/traitement_sons/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://balises-sonores.github.io/recettes/script_demarrage/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Traitement des sons - Balises Sonores Ouistici</title>
+    <title>Lancer un script au démarrage du Raspberry Pi - Balises Sonores Ouistici</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Traitement des sons";
-        var mkdocs_page_input_path = "recettes/traitement_sons.md";
-        var mkdocs_page_url = "/recettes/traitement_sons/";
+        var mkdocs_page_name = "Lancer un script au d\u00e9marrage du Raspberry Pi";
+        var mkdocs_page_input_path = "recettes/script_demarrage.md";
+        var mkdocs_page_url = "/recettes/script_demarrage/";
       </script>
     
     <script src="../../js/jquery-3.6.0.min.js" defer></script>
@@ -71,11 +71,11 @@
               <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../circuitpython/">Configurer un microcontrôleur Pico pour programmer avec CircuitPython</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../script_demarrage/">Lancer un script au démarrage du Raspberry Pi</a>
-                  </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Traitement des sons</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Lancer un script au démarrage du Raspberry Pi</a>
     <ul class="current">
     </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../traitement_sons/">Traitement des sons</a>
                   </li>
               </ul>
       </div>
@@ -93,7 +93,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
           <li>Recettes &raquo;</li>
-      <li>Traitement des sons</li>
+      <li>Lancer un script au démarrage du Raspberry Pi</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -102,19 +102,25 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="traitement-des-sons">Traitement des sons</h1>
-<p>Ouvrir le son enregistré avec un logiciel de traitement de son, par exemple Audacity.
-Couper si nécessaire les partie avant et après le son voulu.
-Appliquer un léger fade-in et fade-out pour éviter les clics au démarrage et à la fin du son.
-Pour gagner de l'espace mémoire, passer de stéréo à mono.
-Normaliser le son pour "équilibrer" le volume du son.</p>
-<p>Exporter le résultat au format <code>wave</code> (fichier <code>.wav</code>). Pour gagner de la place mémoire, choisir une de 16bits.
-éventuellement baisser le son (amplifier avec une valeur négative) pour créer un ou deux autres fichiers avec un volume plus faible (-3dB et -6dB par exemple)</p>
+                <h1 id="lancer-un-script-au-demarrage-du-raspberry-pi">Lancer un script au démarrage du Raspberry Pi</h1>
+<p>Éditer le fichier <code>/etc/rc.local</code>, en ajoutant votre commande juste au-dessus de la ligne <code>exit 0</code>.</p>
+<p>Pour lancer un script Python par exemple, le fichier pourra ressembler à cela :</p>
+<pre><code>...
+...
+/usr/bin/python3 /home/ouistici/ouistici.py &amp;
+exit 0
+</code></pre>
+<p>À noter : 
+- le caractère <code>&amp;</code> permet de lancer le script en arrière-plan
+- vous devez avoir le droit d'exécuter le script
+- le script sera lancé par l'utilisateur <code>root</code></p>
+<p>Source : <a href="https://raspberry-pi.fr/executer-programme-demarrage/">raspberry-pi.fr/executer-programme-demarrage</a></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../script_demarrage/" class="btn btn-neutral float-left" title="Lancer un script au démarrage du Raspberry Pi"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../circuitpython/" class="btn btn-neutral float-left" title="Configurer un microcontrôleur Pico pour programmer avec CircuitPython"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../traitement_sons/" class="btn btn-neutral float-right" title="Traitement des sons">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -138,8 +144,10 @@ Normaliser le son pour "équilibrer" le volume du son.</p>
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../script_demarrage/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../circuitpython/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
+    
+      <span><a href="../traitement_sons/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

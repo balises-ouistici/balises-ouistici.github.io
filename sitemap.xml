@@ -41,6 +41,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://balises-sonores.github.io/recettes/script_demarrage/</loc>
+         <lastmod>2023-06-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://balises-sonores.github.io/recettes/traitement_sons/</loc>
          <lastmod>2023-06-06</lastmod>
          <changefreq>daily</changefreq>
