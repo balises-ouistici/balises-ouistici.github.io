@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://balises-sonores.github.io/Balise%20Pico-CC1101/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://balises-sonores.github.io/Balise%20Cpp-CC1101/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Balise Pico-CC1101 - Balises Sonores Ouistici</title>
+    <title>Balise C++ et CC1101 - Balises Sonores Ouistici</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Balise Pico-CC1101";
-        var mkdocs_page_input_path = "Balise Pico-CC1101/index.md";
-        var mkdocs_page_url = "/Balise%20Pico-CC1101/";
+        var mkdocs_page_name = "Balise C++ et CC1101";
+        var mkdocs_page_input_path = "Balise Cpp-CC1101/index.md";
+        var mkdocs_page_url = "/Balise%20Cpp-CC1101/";
       </script>
     
     <script src="../js/jquery-3.6.0.min.js" defer></script>
@@ -49,21 +49,25 @@
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Balise Cpp CC1101</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../Balise%20Cpp-CC1101/">Balise C++ et CC1101</a>
-                  </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Balise Pico CC1101</span></p>
               <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Balise Pico-CC1101</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Balise C++ et CC1101</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#materiel-necessaire">Matériel nécessaire</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#programme">Programme</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#to-do">TO-DO</a>
     </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="proto_bouton/">Balise Pico-CC1101 bouton</a>
+              </ul>
+              <p class="caption"><span class="caption-text">Balise Pico CC1101</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Balise%20Pico-CC1101/">Balise Pico-CC1101</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="proto_simple/">Balise Pico-CC1101 simple</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../Balise%20Pico-CC1101/proto_bouton/">Balise Pico-CC1101 bouton</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Balise%20Pico-CC1101/proto_simple/">Balise Pico-CC1101 simple</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Balise RTL SDR</span></p>
@@ -99,8 +103,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
-          <li>Balise Pico CC1101 &raquo;</li>
-      <li>Balise Pico-CC1101</li>
+          <li>Balise Cpp CC1101 &raquo;</li>
+      <li>Balise C++ et CC1101</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -109,28 +113,29 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="balise-pico-cc1101">Balise Pico-CC1101</h1>
-<p>Trois modèles :</p>
+                <h1 id="balise-c-et-cc1101">Balise C++ et CC1101</h1>
+<h2 id="materiel-necessaire">Matériel nécessaire</h2>
 <ul>
-<li><a href="proto_simple/">Modèle simple</a>, sans bouton ni message alternatif</li>
-<li><a href="proto_bouton/">Modèle avec bouton</a>, sans message alternatif</li>
-<li><a href="proto_bouton_inter.md">Modèle avec bouton et message alternatif</a></li>
+<li>carte Raspberry Pico</li>
+<li>module radio CC1101</li>
+<li>amplificateur audio MAX98357A</li>
+<li>haut-parleur 4ohms</li>
+<li>boîtier étanche (bloc de dérivation 15cmx15cm par exemple)</li>
 </ul>
+<h2 id="programme">Programme</h2>
+<p>Les sources sont ici : 
+<a href="https://github.com/balises-ouistici/esp-arduino-nfs32002">github.com/balises-ouistici/esp-arduino-nfs32002</a></p>
 <h2 id="to-do">TO-DO</h2>
-<p>Points d'amélioration / Fonctionnalités supplémentaires</p>
 <ul>
-<li>lire les sons depuis une carte SD pour augmenter les capacités de stockage</li>
-<li>utiliser de carte avec une mémoire plus importante pour augmenter les capacités de stockage</li>
-<li>...</li>
-<li>mode de communication entre 2 balises pour avertir la voisine qu'un signal a été reçu</li>
-<li>...</li>
+<li>vérifier le fonctionnement de la bibliothèque</li>
+<li>lire un son ; voir la bibliothèque <a href="https://github.com/earlephilhower/ESP8266Audio/">ESP8266Audio</a> ?</li>
 </ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../Balise%20Cpp-CC1101/" class="btn btn-neutral float-left" title="Balise C++ et CC1101"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="proto_bouton/" class="btn btn-neutral float-right" title="Balise Pico-CC1101 bouton">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../questions/" class="btn btn-neutral float-left" title="questions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Balise%20Pico-CC1101/" class="btn btn-neutral float-right" title="Balise Pico-CC1101">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -154,10 +159,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../Balise%20Cpp-CC1101/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../questions/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="proto_bouton/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../Balise%20Pico-CC1101/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

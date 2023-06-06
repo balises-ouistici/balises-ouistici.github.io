@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://balises-sonores.github.io/Balise%20Cpp-CC1101/</loc>
+         <lastmod>2023-06-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://balises-sonores.github.io/Balise%20Pico-CC1101/</loc>
          <lastmod>2023-06-06</lastmod>
          <changefreq>daily</changefreq>

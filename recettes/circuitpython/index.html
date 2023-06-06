@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://balises-sonores.github.io/recettes/circuitpython/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Configurer un microcontrôleur Pico pour programmer avec CircuitPython - Balises Sonores Ouistici</title>
+    <title>Configurer un microcontrôleur pour CircuitPython - Balises Sonores Ouistici</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Configurer un microcontr\u00f4leur Pico pour programmer avec CircuitPython";
+        var mkdocs_page_name = "Configurer un microcontr\u00f4leur pour CircuitPython";
         var mkdocs_page_input_path = "recettes/circuitpython.md";
         var mkdocs_page_url = "/recettes/circuitpython/";
       </script>
@@ -48,6 +48,11 @@
                 <li class="toctree-l1"><a class="reference internal" href="../../questions/">questions</a>
                 </li>
               </ul>
+              <p class="caption"><span class="caption-text">Balise Cpp CC1101</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Balise%20Cpp-CC1101/">Balise C++ et CC1101</a>
+                  </li>
+              </ul>
               <p class="caption"><span class="caption-text">Balise Pico CC1101</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../Balise%20Pico-CC1101/">Balise Pico-CC1101</a>
@@ -69,7 +74,7 @@
               </ul>
               <p class="caption"><span class="caption-text">Recettes</span></p>
               <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Configurer un microcontrôleur Pico pour programmer avec CircuitPython</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Configurer un microcontrôleur pour CircuitPython</a>
     <ul class="current">
     </ul>
                   </li>
@@ -93,7 +98,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
           <li>Recettes &raquo;</li>
-      <li>Configurer un microcontrôleur Pico pour programmer avec CircuitPython</li>
+      <li>Configurer un microcontrôleur pour CircuitPython</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -102,13 +107,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="configurer-un-microcontroleur-pico-pour-programmer-avec-circuitpython">Configurer un microcontrôleur Pico pour programmer avec CircuitPython</h1>
+                <h1 id="configurer-un-microcontroleur-pour-circuitpython">Configurer un microcontrôleur pour CircuitPython</h1>
 <ol>
-<li>Télécharger la version qui correspond à votre carte microcontrôleur</li>
-<li></li>
-<li>Copier le fichier <code>.uf2</code> dans le lecteur qui s'ouvre</li>
+<li>Télécharger le fichier adapté à votre microcontrôleur <a href="https://circuitpython.org/downloads">sur le site CircuitPython</a></li>
 </ol>
-<p>Vous, par exemple avec le logiciel </p>
+<p>Une fois le fichier télechargé :
+- Garder appuyé le bouton "BOOTSEL" du Rasberry Pico, brancher le Rasberry Pico à l'ordinateur, puis relacher le bouton
+- Un dossier Rapsberry Pico s'ouvre
+- Déplacer le fichier téléchargé (.uf2) dans le dossier du Rasberry Pico</p>
+<p>Votre carte est prête à recevoir un programme en CircuitPython.</p>
+<p>Vous pouvez utiliser le <a href="https://codewith.mu/en/download">logiciel Mu</a> pour écrire vos programmes en CircuitPython.</p>
               
             </div>
           </div><footer>
