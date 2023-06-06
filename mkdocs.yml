@@ -21,3 +21,6 @@ theme:
         name: Site en mode lumineux
 
 copyright: Balises Ouistici, un projet des Petit⋅e⋅s Débrouillard⋅e⋅s Aura
+
+markdown_extensions:
+  - attr_list
