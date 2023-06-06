@@ -9,7 +9,8 @@ Pour lancer un script Python par exemple, le fichier pourra ressembler à cela :
 /usr/bin/python3 /home/ouistici/ouistici.py &
 exit 0
 ```
-À noter : 
+À noter :
+
 - le caractère `&` permet de lancer le script en arrière-plan
 - vous devez avoir le droit d'exécuter le script
 - le script sera lancé par l'utilisateur `root`

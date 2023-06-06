@@ -11,9 +11,9 @@
 
 ## Assemblage
 
-![](rpi.jpg)
-![](rtlsdr.jpg)
-![](speaker.jpg)
+![](rpi.jpg){: style="height:150px"}
+![](rtl-sdr.jpg){: style="height:150px"}
+![](speaker.jpg){: style="height:150px"}
 
 ## Programme
 
