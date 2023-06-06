@@ -10,6 +10,7 @@
 
 ## Assemblage
 
+![](plan_balise_circuitpython.jpg){: style="height:250px"}
 
 ## Programme
 
