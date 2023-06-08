@@ -8,6 +8,10 @@
 - haut-parleur 4ohms
 - boîtier étanche (bloc de dérivation 15cmx15cm par exemple)
 
+## Assemblage
+
+![](plan_radio_cpp.jpg){: style="height:250px"}
+
 ## Programme
 
 Les sources sont ici : 
