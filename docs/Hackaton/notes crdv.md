@@ -1,10 +1,6 @@
 # Suggestions de la préparatoire CRDV
 
-!!! info
-
-.
-
-1. Compatible avec les interphones des immeubles.
+1. Compatible avec les interphones des immeubles (vocalisation des noms)
 2. Accessibilité avec les gares routières
 3. Identifier, café restaurant, (carte des menus) adapté les magasins, et identifier différents les rayons.
 4. Tous les organismes publics, établissement scolaire, musé, mairie etc.
@@ -20,3 +16,7 @@
 
 ## Échanges
 
+Nous pensons également : 
+
+14. Boîtes de nuit
+15. Festivals
