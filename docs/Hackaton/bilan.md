@@ -1,14 +1,12 @@
-# Hackaton des usages 9-10-11 juin 2023
+# Bilan et échanges
 
-## Bilan et échanges
+## 1- Balises temporaire pendant les chantiers
 
-### 1- Balises temporaire pendant les chantiers
+!!! abstract "Contexte"
 
-!!! abstract "contexte"
-
-- De nombreux chantiers
-- Les chantiers doivent assurer la traversée piétonne
-- Pas de dispositifs d'information pour les personnes malvoyantes ou aveugles.
+    - De nombreux chantiers
+    - Les chantiers doivent assurer la traversée piétonne
+    - Pas de dispositifs d'information pour les personnes malvoyantes ou aveugles.
 
 Une équipe est allée en repérage en ville. Guidés par Laurence, pour voir un carrefour en chantier, typiquement le cas : on est prêt à traverser et on tombe sur des barrières de chantiers, on é étudié et enregistré des messages dans les deux directions. On a utilisé le cadrant de l'horloge, c'est difficile de décrire de façon simple, complète et universelle d'enregistrer le bon message. 
 
@@ -33,7 +31,7 @@ la question se pose, on le voit bien avec le budget participatif, dans lequel de
 Est-ce qu'on pallie au fait que les fonctionnaires n'assument pas cette part ? Ou bien est-ce qu'on dispense des formations aux fonctionnaires ? Ou est-ce réellement volontaire ? 
 
 
-### 2- Transports en commun
+## 2- Transports en commun
 
 A partir de la problématique des arrêts de bus qui devraient délivrer des infos personnalisées - à relier avec le choix possible d'une autre langue…
 Balise parlante : si c'est personnalisé, il faut aussi des haut parleurs plus puissants, car le bruit de fond est important. 
@@ -44,7 +42,7 @@ Le son oriente vers la balise, et ensuite à proximité, on passe sur smartphone
 Mais limites : précision du GPS, précis à 5m et effet canyon dans les petites rues. 
 Pour les balises physiques, peut-être qu’il faut penser qu’elles s’adressent d’abord à des gens qui n'ont pas de smartphone.
 
-### 3- Réutilisation de smartphones "dormants"
+## 3- Réutilisation de smartphones "dormants"
 
 On conçoit du matériel spécifique, alors que des vieux téléphones non utilisés existent en quantité, et pourraient servir pour construire les balises.
 

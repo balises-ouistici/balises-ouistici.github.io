@@ -1,6 +1,4 @@
-# Hackaton des usages 9-10-11 juin 2023
-
-## Suggestions balises sonores de la préparatoire CRDV
+# Suggestions de la préparatoire CRDV
 
 !!! info
 

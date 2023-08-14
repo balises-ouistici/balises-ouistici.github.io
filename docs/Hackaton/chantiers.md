@@ -1,6 +1,4 @@
-# Hackaton des usages 9-10-11 juin 2023
-
-## Notes chantiers et balisage temporaire
+# Chantiers et balisage temporaire
 
 Nous sommes allés voir (avec Laurence comme guide experte) le carrefour en travaux en haut du boulevard Lafayette. Nous avons constaté une difficulté pour accéder au jardin Lecoq à partir du Musée Bargoin, sur la traversée du boulevard Lafayette.
 
