@@ -1,11 +1,10 @@
 site_name: Balises Sonores Ouistici
 site_url: https://balises-sonores.github.io/
-logo: docs/ouistici.png
-locale: fr
-lang: fr
 
 theme:
   name: readthedocs
+  locale: fr
+  logo: docs/ouistici.png
   palette: 
     - primary: grey
     # Palette toggle for light mode
@@ -13,17 +12,16 @@ theme:
       toggle:
         icon: material/lightbulb
         name: Site en mode sombre
-
     # Palette toggle for dark mode
     - scheme: slate
       toggle:
         icon: material/lightbulb-outline
         name: Site en mode lumineux
 
-  markdown_extensions:
-    - admonition
-
 copyright: Balises Ouistici, un projet des Petit⋅e⋅s Débrouillard⋅e⋅s Aura
 
 markdown_extensions:
   - attr_list
+  - admonition
+  # - pymdownx.details
+  # - pymdownx.superfences
