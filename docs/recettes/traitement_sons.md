@@ -6,9 +6,9 @@
 - Pour gagner de l'espace mémoire, passer de stéréo à mono.
 - Normaliser le son pour "équilibrer" le volume du son.
 
-- Exporter le résultat au format `wave` (fichier `.wav`). Pour gagner de la place mémoire, choisir une de 16bits.
+- Exporter le résultat au format `wave` (fichier `.wav`). Pour gagner de la place mémoire, choisir une résolution d'échantillonage de 16bits.
 
-Éventuellement baisser le son (amplifier avec une valeur négative) pour créer un ou deux autres fichiers avec un volume plus faible (-3dB et -6dB par exemple)
+Éventuellement baisser le niveau du son (amplifier avec une valeur négative) pour créer un ou deux autres fichiers avec un volume plus faible (-3dB et -6dB par exemple)
 
 
  

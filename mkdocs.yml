@@ -20,6 +20,9 @@ theme:
         icon: material/lightbulb-outline
         name: Site en mode lumineux
 
+  markdown_extensions:
+    - admonition
+
 copyright: Balises Ouistici, un projet des Petit⋅e⋅s Débrouillard⋅e⋅s Aura
 
 markdown_extensions:
