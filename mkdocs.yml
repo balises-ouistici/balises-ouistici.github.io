@@ -4,7 +4,7 @@ site_url: https://balises-sonores.github.io/
 theme:
   name: readthedocs
   locale: fr
-  logo: docs/ouistici.png
+  logo: ouistici.png
   palette: 
     - primary: grey
     # Palette toggle for light mode
