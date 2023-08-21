@@ -1,4 +1,6 @@
-# Chantiers et balisage temporaire
+# 1- Chantiers et balisage temporaire
+
+##  Contexte
 
 Nous sommes allés voir (avec Laurence comme guide experte) le carrefour en travaux en haut du boulevard Lafayette. Nous avons constaté une difficulté pour accéder au jardin Lecoq à partir du Musée Bargoin, sur la traversée du boulevard Lafayette.
 
@@ -7,7 +9,7 @@ Nous sommes allés voir (avec Laurence comme guide experte) le carrefour en trav
 
 L'après midi, nous prévoyons de retourner avec de nouveaux experts pour tester  nos essais, les améliorer peut-être.
 
-Objectifs idéaux :
+## Objectifs idéaux :
 
 1. Être en mesure d'intervenir rapidement, à la demande, sur des désordres liés aux chantiers, notamment ceux du programme Inspire qui devrait durer trois ans.
 2. Avec des balises peu coûteuses et une participation citoyenne (on pense au comptage des oiseaux réalisé par la LPO, au nettoyage des plages, ce genre d'initiative citoyenne).
@@ -16,3 +18,29 @@ Une carte facilmap est en construction ici : <https://facilmap.org/hackaton%231o
 
 Fonds de carte : <http://osm.cquest.org/dev/#14/48.8500/2.3500> 
 
+## Quelques photos du carrefour en travaux
+
+<a href="../chantier-1.jpg">
+<figure markdown style="float:left;margin:10px;width:300px">
+  ![](chantier-1.jpg)
+  <figcaption>Vue des barrières depuis le musée Bargoin</figcaption>
+</figure>
+</a>
+<a href="../chantier-2.jpg">
+<figure markdown style="float:left;margin:10px;width:300px">
+  ![](chantier-2.jpg)
+  <figcaption>Traversée du premier passage piéton et insertion dans le couloir aménagé</figcaption>
+</figure>
+</a>
+<a href="../chantier-3.jpg">
+<figure markdown style="float:left;margin:10px;width:300px">
+  ![](chantier-3.jpg)
+  <figcaption>Vue depuis le couloir aménagé (chemin de contournement)</figcaption>
+</figure>
+</a>
+<a href="../chantier-4.jpg">
+<figure markdown style="float:left;margin:10px;width:300px">
+  ![](chantier-4.jpg)
+  <figcaption>Vue de la porte du jardin Lecoq (arrivée dans ce sens, le couloir est sur la gauche)</figcaption>
+</figure>
+</a>

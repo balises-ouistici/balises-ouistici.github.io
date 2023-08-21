@@ -23,5 +23,10 @@ copyright: Balises Ouistici, un projet des Petit⋅e⋅s Débrouillard⋅e⋅s A
 markdown_extensions:
   - attr_list
   - admonition
+  - md_in_html
   # - pymdownx.details
   # - pymdownx.superfences
+
+plugins:
+  - search
+  
