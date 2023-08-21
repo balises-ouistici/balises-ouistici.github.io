@@ -2,13 +2,13 @@
 
 ##
 
-- PCB : circuit imprimé
+Un **PCB** (printed circuit board) est un **circuit imprimé**.
 - Overpass
 - termux
 - 
-- RTL-SDR : clé USB pour reçevoir la radio. fonctionne pour une large bande de fréquences
-- C++
-- Python
+La **clé RTL-SDR** se branche en USB et contient un récepteur radio qui fonctionne pour une large bande de fréquences. Cela permet de l'utiliser autant pour reçevoir la télévision via TNT que pour le signal d'une balise sonore.
+
+Parmi les **langages de programmation** pour microcontrôleurs, on peut citer **Python** ou le **C++**.
 
 **OpenStreetMap (OSM)** est un projet de cartographie collaborative du monde. OSM permet de cartographier les routes, les voies d’eau, mais aussi les passages piéton, des données sur l’accessibilité des bâtiments... Chacun⋅e peut contribuer à ces informations géographiques, mais aussi les utiliser librement, pour créer des cartes, ou pour
 d’autres usage : afficher les terrasses au soleil, les bars ouverts, ou les feux sonores dans sa ville par exemple. 
