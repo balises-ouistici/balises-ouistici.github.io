@@ -11,6 +11,7 @@
 ## Assemblage
 
 ![](plan_radio_cpp.jpg){: style="height:250px"}
+![](speaker.jpg){: style="height:150px"}
 
 ## Programme
 

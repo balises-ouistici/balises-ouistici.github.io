@@ -1,4 +1,4 @@
-# questions
+# Questions
 
 - comment la personne qui arrive peut savoir qu'il existe une balise sonore proche (que tel lieu est équipé) ?
 -> la balise indique sa présence (par vibration de la télécommande)

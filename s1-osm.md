@@ -1,1 +1,0 @@
-# seance 1 - openstreetmap

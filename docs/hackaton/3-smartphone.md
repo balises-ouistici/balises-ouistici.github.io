@@ -1,4 +1,4 @@
-# Groupe smartphone et balise parlante
+# 3- Groupe smartphone et balise parlante
 
 !!! abstract "Contexte"
 
@@ -12,7 +12,7 @@ Récupérer des smartphones qui dorment
 Facilités de connexion (SMS, 3G, wifi, bluetooth...)
 
 
-## 2- Vocalisation pour une balise parlante
+## 2- Vocalisation et reconnaissance vocale pour une balise parlante
 
 
 

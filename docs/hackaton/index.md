@@ -1,13 +1,19 @@
 # Hackaton des usages 9-10-11 juin 2023
 
-## Suggestions de sujets à explorer, en amont du hackaton
+!!! info
+    
+    Nous étions une vingtaine de personnes à réflechir ensemble et aux usages 
+    des balises sonores, et à travailler sur des prototypes.  
+    Usagères et usagers de balises, professionnelle de la mobilité ou amateur⋅e⋅s intéressé⋅e⋅s par la thématique, passioné⋅e⋅s de technologie, lycéen⋅e⋅s ou plus âgés...
+
+## Suggestions de sujets à explorer (affichage libre)
 
 - Installation temporaire : chantiers, festivals
 - Maquette des arrêts de bus Jaude
 - Balises polyglottes (anglais, portugais, )
 - Sous-titrage occitan des noms de rue et messages
-- Info complémentaires sur smartphone (bluetooth)
-- Vieux smartphone comme balise ?
+- Informations complémentaires sur smartphone (bluetooth)
+- Vieux smartphone reconverti comme balise sonore ?
 - Reconnaissance vocale
 
 ## Suggestions de la préparatoire CRDV
