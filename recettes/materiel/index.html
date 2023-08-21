@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://balises-sonores.github.io/recettes/antenne/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://balises-sonores.github.io/recettes/materiel/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Longueur de l'antenne - Balises Sonores Ouistici</title>
+    <title>Matériel - Balises Sonores Ouistici</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Longueur de l\u0027antenne";
-        var mkdocs_page_input_path = "recettes/antenne.md";
-        var mkdocs_page_url = "/recettes/antenne/";
+        var mkdocs_page_name = "Mat\u00e9riel";
+        var mkdocs_page_input_path = "recettes/materiel.md";
+        var mkdocs_page_url = "/recettes/materiel/";
       </script>
     
     <!--[if lt IE 9]>
@@ -94,13 +94,19 @@
               </ul>
               <p class="caption"><span class="caption-text">Recettes</span></p>
               <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Longueur de l'antenne</a>
-    <ul class="current">
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../antenne/">Longueur de l'antenne</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../circuitpython/">Configurer un microcontrôleur pour CircuitPython</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../materiel/">Matériel</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Matériel</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#microcontroleurs">Microcontrôleurs</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#amplificateurs-audio">Amplificateurs audio</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#module-radio">Module Radio</a>
+    </li>
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../script_demarrage/">Lancer un script au démarrage du Raspberry Pi</a>
                   </li>
@@ -122,7 +128,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
           <li>Recettes &raquo;</li>
-      <li class="breadcrumb-item active">Longueur de l'antenne</li>
+      <li class="breadcrumb-item active">Matériel</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -131,29 +137,96 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="longueur-de-lantenne">Longueur de l'antenne</h1>
-<p>Pour l'antenne du recepteur, soudé au module radio <strong>CC1101</strong> ou fixé à la <strong>clé RTL-SDR</strong>, on utilise un fil conducteur. </p>
-<p>La longueur de ce fil dépend de la fréquence radio. Pour nous, il s'agit du <strong>868.3 MHz</strong> (méga hetrz).</p>
-<pre><code>Longueur antenne = c / f
-</code></pre>
-<p>où 
-- <code>c</code> est la vitesse de la lumière dans le vide : 299 792 458 m/s (mètres par seconde)
-- <code>f</code> est la fréquence radio avec laquelle on travaille : 868 300 000 Hz (Hertz)</p>
-<pre><code>Longueur antenne = 299 792 458 / 868 300 000 
-                 = 0,345 m (mètres)
-                 = 34,5 cm (centimètres)
-</code></pre>
-<p>En réalité, nous pouvons utiliser des longueurs plus petites en divisant par 2, 4, 8..
-En diminuant la longueur de l'antenne, on perd tout de même en force du signal.</p>
-<p>Nous utiliserons la moitié de la longueur calculée, soit :</p>
-<pre><code>34,5 cm / 2 = 17,3 cm (centimètres)
-</code></pre>
+                <h1 id="materiel">Matériel</h1>
+<h2 id="microcontroleurs">Microcontrôleurs</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>avantages</th>
+<th>inconvénients</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raspberry Pico</td>
+<td>- alimentation et courant logique 3.3V <strong>¹</strong><br/>- prix<br/>- consommation<br/>- wifi voire bluetooth (modèle W)</td>
+<td>- espace disponible<strong>²</strong></td>
+</tr>
+<tr>
+<td>ESP</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Arduino</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ST Microelectronics</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>¹</strong> utile pour alimenter directement le module radio CC1101</p>
+<p><strong>²</strong> suffisant pour un seul son ; une carte SD peut ajouter de l'espace. Certaines copies de la carte ont également plus d'espace mémoire disponible.</p>
+<h2 id="amplificateurs-audio">Amplificateurs audio</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>avantages</th>
+<th>inconvénients</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Amplificateur numérique I2S</td>
+<td>- pas de perte de puissance<br/>- compact</td>
+<td></td>
+</tr>
+<tr>
+<td>DAC I2S + ampli analogique</td>
+<td>- volume sonore plus important, réglable</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="module-radio">Module Radio</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>avantages</th>
+<th>inconvénients</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CC1101</td>
+<td>- fréquence</td>
+<td></td>
+</tr>
+<tr>
+<td>circuit dédié</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>clé RTL-SDR</td>
+<td></td>
+<td>nécéssite un ordinateur</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../hackaton/bilan/" class="btn btn-neutral float-left" title="Bilan et échanges"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../circuitpython/" class="btn btn-neutral float-right" title="Configurer un microcontrôleur pour CircuitPython">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../circuitpython/" class="btn btn-neutral float-left" title="Configurer un microcontrôleur pour CircuitPython"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../script_demarrage/" class="btn btn-neutral float-right" title="Lancer un script au démarrage du Raspberry Pi">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -177,10 +250,10 @@ En diminuant la longueur de l'antenne, on perd tout de même en force du signal.
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../hackaton/bilan/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../circuitpython/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../circuitpython/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../script_demarrage/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
