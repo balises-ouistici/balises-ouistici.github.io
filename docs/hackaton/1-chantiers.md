@@ -44,3 +44,19 @@ Fonds de carte : <http://osm.cquest.org/dev/#14/48.8500/2.3500>
   <figcaption>Vue de la porte du jardin Lecoq (arrivée dans ce sens, le couloir est sur la gauche)</figcaption>
 </figure>
 </a>
+
+## Desciption du carrefour, essais de messages
+
+[Document qui décrit la traversée (pdf)](presentation traversée de lafayette.pdf)
+
+!!! note "Messages possibles pour info côté musée"
+
+    - [piétons,] la traversée [boulevard Lafayette] en direction du jardin Lecoq est [temporairement] modifiée à la fin du passage piéton. Orientez-vous à 2 heures pour emprunter un passage sécurisé.
+    - [piétons,] la traversée [boulevard Lafayette] en direction du jardin Lecoq est [temporairement] modifiée. Elle est sécurisée sur sa 2ème partie. Orientez-vous à 2 heures.
+
+
+!!! note "Messages possibles pour info côté jardin"
+
+    - [piétons,] la traversée [boulevard Lafayette] vers le musée Bargoin est [temporairement] modifiée. Placez vous face à l'avenue Vercingétorix, puis orientez-vous à 15 heures pour emprunter un passage sécurisé.
+
+    - [piétons,] la traversée [boulevard Lafayette] vers le musée Bargoin est [temporairement] modifiée. Placez vous au départ du passage piéton de l'avenue Vercingétorix. Orientez-vous à 15 heures pour emprunter un passage sécurisé.
