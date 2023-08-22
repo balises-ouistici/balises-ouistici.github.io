@@ -13,7 +13,7 @@ Nous récupérrons une télécommande à la mairie et allons tester les feux son
 
 ## OpenStreetMap 
 
-À l'aide l'application mobile [ **StreetComplete**](https://streetcomplete.app/) nous complétons les données à partir de ce qu'on observe sur le terrain.  
+À l'aide l'application mobile [**StreetComplete**](https://streetcomplete.app/) nous complétons les données à partir de ce qu'on observe sur le terrain.  
 StreetComplete permet de choisir des éléments auxquels on souhaite contribuer, ou bien on peut se laisser guider selon ce qu'il y a sur autour de nous.
 
 ## Signal des télécommandes et norme des feux sonores
