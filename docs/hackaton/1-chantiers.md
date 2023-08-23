@@ -9,6 +9,12 @@ Nous sommes allés voir (avec Laurence comme guide experte) le carrefour en trav
 
 L'après midi, nous prévoyons de retourner avec de nouveaux experts pour tester  nos essais, les améliorer peut-être.
 
+## Informations disponibles 
+
+Les informations à propos des travaux sur la métropole de Clermont-Ferrand sont centralisées sur le site [C le Chantier](https://www.clermontmetropole.eu/c-le-chantier-travaux/).
+
+On y trouve des schémas qui montrent les tronçons en travaux, les modalités de circulation pour les véhicules motorisés.
+
 ## Objectifs idéaux :
 
 1. Être en mesure d'intervenir rapidement, à la demande, sur des désordres liés aux chantiers, notamment ceux du programme Inspire qui devrait durer trois ans.

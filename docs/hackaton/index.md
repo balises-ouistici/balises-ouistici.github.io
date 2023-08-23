@@ -4,7 +4,7 @@
     
     Nous étions une vingtaine de personnes à réflechir ensemble et aux usages 
     des balises sonores, et à travailler sur des prototypes.  
-    Usagères et usagers de balises, professionnelle de la mobilité ou amateur⋅e⋅s intéressé⋅e⋅s par la thématique, passioné⋅e⋅s de technologie, lycéen⋅e⋅s ou plus âgés...
+    Usagères et usagers de balises, professionnelle de la mobilité ou amateur⋅e⋅s intéressé⋅e⋅s par la thématique, passioné⋅e⋅s de technologie, professionnel⋅le⋅s et curieux⋅ses, lycéen⋅e⋅s ou plus âgés...
 
 ## Suggestions de sujets à explorer (affichage libre)
 
