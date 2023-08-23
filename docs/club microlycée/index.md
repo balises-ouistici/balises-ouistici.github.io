@@ -18,8 +18,9 @@ StreetComplete permet de choisir des éléments auxquels on souhaite contribuer,
 
 ## Signal des télécommandes et norme des feux sonores
 
-Sur 3 télécommandes nous avons étudié le signal de 2 d'entre elles. On a remarqué qu'elles utilisent le même signal et le répètent, mais dans un même laps de temps elles le répètent un nombre différent de fois. 
-**télécommandes 1, 2, 3**
+Sur 3 télécommandes nous avons étudié le signal de 2 d'entre elles. On a remarqué qu'elles utilisent le même signal et le répètent, mais dans un même laps de temps elles le répètent un nombre différent de fois.
+
+![télécommandes de différentes marques](telecommandes.jpg) 
 
 En effet les télécommandes envoyant à une fréquence spécifique aux balises déstinées au nonvoyants et malvoyants sont soumises a une norme, comme les feux sonores.
 
