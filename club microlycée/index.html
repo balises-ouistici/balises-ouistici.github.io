@@ -45,7 +45,11 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../questions/">Questions</a>
+                <li class="toctree-l1"><a class="reference internal" href="../glossaire/">Glossaire pour expliquer les mots mal connus</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../questions/">Questions et feuille de route</a>
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Balise Cpp CC1101</span></p>
@@ -55,11 +59,7 @@
               </ul>
               <p class="caption"><span class="caption-text">Balise Pico CC1101</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../Balise%20Pico-CC1101/">Balise Pico-CC1101</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../Balise%20Pico-CC1101/proto_bouton/">Balise Pico-CC1101 bouton</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../Balise%20Pico-CC1101/proto_simple/">Balise Pico-CC1101 simple</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../Balise%20Pico-CC1101/">Balise Pico-CC1101 CircuitPython</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Balise RTL SDR</span></p>
@@ -80,11 +80,6 @@
     <li class="toctree-l2"><a class="reference internal" href="#photos">Photos</a>
     </li>
     </ul>
-                  </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Glossaire</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../glossaire/">Glossaire pour expliquer les mots mal connus</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Hackaton</span></p>
@@ -153,8 +148,8 @@ Nous récupérrons une télécommande à la mairie et allons tester les feux son
 <p>À l'aide l'application mobile <a href="https://streetcomplete.app/"><strong>StreetComplete</strong></a> nous complétons les données à partir de ce qu'on observe sur le terrain.<br />
 StreetComplete permet de choisir des éléments auxquels on souhaite contribuer, ou bien on peut se laisser guider selon ce qu'il y a sur autour de nous.</p>
 <h2 id="signal-des-telecommandes-et-norme-des-feux-sonores">Signal des télécommandes et norme des feux sonores</h2>
-<p>Sur 3 télécommandes nous avons étudié le signal de 2 d'entre elles. On a remarqué qu'elles utilisent le même signal et le répètent, mais dans un même laps de temps elles le répètent un nombre différent de fois. 
-<strong>télécommandes 1, 2, 3</strong></p>
+<p>Sur 3 télécommandes nous avons étudié le signal de 2 d'entre elles. On a remarqué qu'elles utilisent le même signal et le répètent, mais dans un même laps de temps elles le répètent un nombre différent de fois.</p>
+<p><img alt="télécommandes de différentes marques" src="telecommandes.jpg" /> </p>
 <p>En effet les télécommandes envoyant à une fréquence spécifique aux balises déstinées au nonvoyants et malvoyants sont soumises a une norme, comme les feux sonores.</p>
 <p>La fréquence utilisée pour communiquer par ondes radio entre la télécommande et le feu sonore ou la balise sonore est le 868,3 MHz (méga-hertz).</p>
 <p>Pour les feux sonores par exemple il faut que le signal déclenchant "stop" provoque un son plus fort que celui qui indique qu'on peut traverser.
@@ -163,7 +158,6 @@ StreetComplete permet de choisir des éléments auxquels on souhaite contribuer,
 <p>Les deux télécommandes testées produisent ce signal, celle de Clermont a trois boutons et le premier utilise ce signal universelle alors que celle prêtée par la mairie de Riom n'a qu'un bouton qui utilise cette fréquence.</p>
 <p>Pour celle de Clermont appuyer sur le bouton déclenche le signal un court instant et pour celle de Riom on peut appuyer longtemps sur le bouton pour activer un signal continu avec un intervale de 10 secondes.</p>
 <p>La trame du signal envoyé par la télécommande et reconnu par le feu sonore ou la balise sonore (ce qu'on a appelé "signal universel") est celle-ci :</p>
-<p>-<em> _ -</em> _ -<em> _ _ _ </em>-_ _ _ _ _ _ _ _ _ _</p>
 <p><img alt="trame norme balises sonores" src="trame%20norme%20balises%20sonores.png" /> </p>
 <h2 id="photos">Photos</h2>
 <p>Vous pouvez trouver plus de photos ici :
@@ -173,7 +167,7 @@ media.lespetitsdebrouillards-aura.org</p>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
         <a href="../Balise%20RTL-SDR/" class="btn btn-neutral float-left" title="Balise RTL-SDR"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
-        <a href="../glossaire/" class="btn btn-neutral float-right" title="Glossaire pour expliquer les mots mal connus">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../hackaton/" class="btn btn-neutral float-right" title="Hackaton des usages 9-10-11 juin 2023">Suivant <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -200,7 +194,7 @@ media.lespetitsdebrouillards-aura.org</p>
       <span><a href="../Balise%20RTL-SDR/" style="color: #fcfcfc">&laquo; Précédent</a></span>
     
     
-      <span><a href="../glossaire/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+      <span><a href="../hackaton/" style="color: #fcfcfc">Suivant &raquo;</a></span>
     
   </span>
 </div>

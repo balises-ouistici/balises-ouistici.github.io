@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://balises-sonores.github.io/questions/" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Questions - Balises Sonores Ouistici</title>
+    <title>Questions et feuille de route - Balises Sonores Ouistici</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Questions";
+        var mkdocs_page_name = "Questions et feuille de route";
         var mkdocs_page_input_path = "questions.md";
         var mkdocs_page_url = "/questions/";
       </script>
@@ -44,9 +44,21 @@
                 <li class="toctree-l1"><a class="reference internal" href="..">Balises sonores Ouistici</a>
                 </li>
               </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../glossaire/">Glossaire pour expliquer les mots mal connus</a>
+                </li>
+              </ul>
               <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="./">Questions</a>
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Questions et feuille de route</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#questions">Questions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#axes-damelioration-des-premiers-prototypes">Axes d'amélioration des premiers prototypes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#axes-damelioration-des-premiers-prototypes-niveau-2">Axes d'amélioration des premiers prototypes (niveau 2)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fonctionnalites-que-lon-souhaite-experimenter">Fonctionnalités que l'on souhaite expérimenter</a>
+    </li>
     </ul>
                 </li>
               </ul>
@@ -57,11 +69,7 @@
               </ul>
               <p class="caption"><span class="caption-text">Balise Pico CC1101</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../Balise%20Pico-CC1101/">Balise Pico-CC1101</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../Balise%20Pico-CC1101/proto_bouton/">Balise Pico-CC1101 bouton</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../Balise%20Pico-CC1101/proto_simple/">Balise Pico-CC1101 simple</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../Balise%20Pico-CC1101/">Balise Pico-CC1101 CircuitPython</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Balise RTL SDR</span></p>
@@ -72,11 +80,6 @@
               <p class="caption"><span class="caption-text">Club microlycée</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../club%20microlyc%C3%A9e/">CLUB Microlycée</a>
-                  </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Glossaire</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../glossaire/">Glossaire pour expliquer les mots mal connus</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Hackaton</span></p>
@@ -121,7 +124,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Documents"></a> &raquo;</li>
-      <li class="breadcrumb-item active">Questions</li>
+      <li class="breadcrumb-item active">Questions et feuille de route</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -130,27 +133,52 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="questions">Questions</h1>
+                <h1 id="questions-et-feuille-de-route">Questions et feuille de route</h1>
+<h2 id="questions">Questions</h2>
 <ul>
-<li>
-<p>comment la personne qui arrive peut savoir qu'il existe une balise sonore proche (que tel lieu est équipé) ?
--&gt; la balise indique sa présence (par vibration de la télécommande)</p>
-</li>
-<li>
-<p>deux balises ou plus pour donner une direction : une au coin et une vers la porte, qui se partage le message pour donner une direction. 
-    ex:  "Oui" (balise1)... "C'est"(balise2)... "Ici"(balise3) (voir cette vidéo)</p>
-</li>
-<li>
-<p>informations audio : sources possibles : message enregistré / wifi + synthèse vocale / donner 
--&gt; lire un son distant (wifi ? pour éviter )</p>
-</li>
+<li>comment la personne qui arrive peut savoir qu'il existe une balise sonore proche (que tel lieu est équipé) ?
+-&gt; la balise indique sa présence (par vibration de la télécommande)</li>
 </ul>
-<p>-&gt; deuxieme appel de télécommande avec un délai, pour avoir plus d'infos appuyez sur le bouton ROUGE.</p>
+<h2 id="axes-damelioration-des-premiers-prototypes">Axes d'amélioration des premiers prototypes</h2>
+<ol>
+<li>Réception radio plus optimale -- antenne(s)</li>
+<li>Niveau sonore modifié par paliers lors d'appuis successifs sur la télécommande</li>
+<li>Niveau sonore adapté au niveau sonore ambiant</li>
+<li>Niveau sonore règlable manuellement par les opérateurs</li>
+</ol>
+<h2 id="axes-damelioration-des-premiers-prototypes-niveau-2">Axes d'amélioration des premiers prototypes (niveau 2)</h2>
+<ol>
+<li>Modèle avec interrupteur pour un message alternatif à la fin, selon si le lieu est ouvert ou non. Pour cela, il faut davantage d'espace de stockage :<ul>
+<li>utiliser une carte avec une mémoire plus importante (copies Raspberry Pico)</li>
+<li>depuis une carte SD ; peut simplifier la gestion des messages audio pour les utilisateurs</li>
+</ul>
+</li>
+</ol>
+<h2 id="fonctionnalites-que-lon-souhaite-experimenter">Fonctionnalités que l'on souhaite expérimenter</h2>
+<ol>
+<li>
+<p>Deux balises ou plus pour donner une direction : une au coin et une vers la porte, qui se partage le message pour donner une direction. 
+    ex:  "C'est" (balise1)... "Par"(balise2)... "Ici"(balise3) (voir cette vidéo)
+    ex:  "Salle ciné n°1" (balise1)... "bip"(balise2)... "bip"(balise3) (voir cette vidéo)</p>
+<ul>
+<li>Balises communicantes, penser à avertir la voisine qu'un signal a été reçu</li>
+<li>Une seule balise avec récepteur radio, et plusieurs speakers spatialisés</li>
+<li>Solution mixte</li>
+</ul>
+</li>
+<li>
+<p>Informations audio : sources possibles : message enregistré / wifi + synthèse vocale / donner 
+-&gt; possible de lire un son distant par wifi ? pour éviter un espace de stockage supplémentaire ?</p>
+</li>
+<li>
+<p>Avec un deuxieme appel de télécommande (définir un délai entre deux appels), un message audio supplémentaire : "pour avoir plus d'infos appuyez sur le bouton, sous la balise" (léger clic pour l'identifier)</p>
+</li>
+</ol>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
-        <a href=".." class="btn btn-neutral float-left" title="Balises sonores Ouistici"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../glossaire/" class="btn btn-neutral float-left" title="Glossaire pour expliquer les mots mal connus"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
         <a href="../Balise%20Cpp-CC1101/" class="btn btn-neutral float-right" title="Balise C++ et CC1101">Suivant <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
@@ -175,7 +203,7 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href=".." style="color: #fcfcfc">&laquo; Précédent</a></span>
+      <span><a href="../glossaire/" style="color: #fcfcfc">&laquo; Précédent</a></span>
     
     
       <span><a href="../Balise%20Cpp-CC1101/" style="color: #fcfcfc">Suivant &raquo;</a></span>
