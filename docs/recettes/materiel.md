@@ -4,7 +4,7 @@
 
 |              |avantages|inconvénients|
 |--------------|---------|-------------|
-|Raspberry Pico|- alimentation et courant logique 3.3V **¹**<br/>- prix<br/>- consommation<br/>- wifi voire bluetooth (modèle W)|- espace disponible**²**|
+|Raspberry Pico|- tension logique 3.3V **¹**<br/>- prix<br/>- consommation<br/>- wifi voire bluetooth (modèle W)|- espace disponible**²**|
 |ESP|||
 |Arduino|||
 |ST Microelectronics|||

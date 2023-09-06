@@ -37,8 +37,6 @@ Pour celle de Clermont appuyer sur le bouton déclenche le signal un court insta
 
 La trame du signal envoyé par la télécommande et reconnu par le feu sonore ou la balise sonore (ce qu'on a appelé "signal universel") est celle-ci :
 
--_ _ -_ _ -_ _ _ _ _-_ _ _ _ _ _ _ _ _ _
-
 ![trame norme balises sonores](trame norme balises sonores.png) 
 
 
