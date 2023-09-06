@@ -26,17 +26,10 @@ Balise simple ou avec bouton lumineux
 Les sources sont ici : 
 [github.com/balises-ouistici/circuitpython-nfs32002](https://github.com/balises-ouistici/circuitpython-nfs32002)
 
-1. Télécharger les scripts Python
+1. Télécharger les scripts CircuitPython
 2. Préparer le Pico pour le programmer en CircuitPython (voir [la recette ici](../recettes/circuitpython.md))
 3. Charger le programme dans le Pico
 
 ## TO-DO
 
-Points d'amélioration / Fonctionnalités supplémentaires
-
-- lire les sons depuis une carte SD pour augmenter les capacités de stockage
-- utiliser de carte avec une mémoire plus importante pour augmenter les capacités de stockage
-- ...
-- mode de communication entre 2 balises pour avertir la voisine qu'un signal a été reçu
-- ...
-- Modèle avec bouton et message alternatif à la fin, selon si le lieu est ouvert ou non.
+voir [les questions et la feuille de route](questions.md)
