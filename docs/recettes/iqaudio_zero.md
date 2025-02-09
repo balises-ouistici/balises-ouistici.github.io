@@ -1,4 +1,4 @@
-# configurer le module IQaudio Zero
+# Configurer le module IQaudio Zero
 
 Ce module permet d'ajouter une sortie son analogique à un Raspberry Pi, pour brancher directement un haut-parleur, ou avoir une sortie ligne.
 

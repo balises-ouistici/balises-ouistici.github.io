@@ -1,4 +1,4 @@
-# Configuration de la balise (Raspberry Pi)
+# Configurer la balise (Raspberry Pi)
 
 ## Connection automatique à un routeur Wifi
 
@@ -15,7 +15,7 @@ network={
 }
 ```
 
-## Bouton d'arrêt
+## Bouton d'arrêt (halt)
 
 Ajouter ou décommenter cette ligne dans le fichier `/boot/firmware/config.txt` (ou `/boot/config.txt`) :
 
