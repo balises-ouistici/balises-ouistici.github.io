@@ -70,6 +70,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#assemblage">Assemblage</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#audio">Audio</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#programme">Programme</a>
     </li>
     </ul>
@@ -106,9 +108,9 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../recettes/circuitpython/">Configurer un microcontrôleur pour CircuitPython</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../recettes/configuration/">Configuration de la balise (Raspberry Pi)</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../recettes/configuration/">Configurer la balise (Raspberry Pi)</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../recettes/iqaudio_zero/">configurer le module IQaudio Zero</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../recettes/iqaudio_zero/">Configurer le module IQaudio Zero</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../recettes/materiel/">Matériel</a>
                   </li>
@@ -148,12 +150,18 @@
 <li>antenne</li>
 <li>boîtier</li>
 <li>Raspberry Pi (v.)</li>
-<li>amplificateur audio et haut-parleur</li>
+<li>amplificateur audio et haut-parleur (voir la section Audio)</li>
 </ul>
 <h2 id="assemblage">Assemblage</h2>
 <p><img alt="" src="rpi.jpg" style="height:150px" />
 <img alt="" src="rtl-sdr.jpg" style="height:150px" />
 <img alt="" src="speaker.jpg" style="height:150px" /></p>
+<h2 id="audio">Audio</h2>
+<p>Selon la version de Raspberry Pi utilisée, il y a différentes possiblités pour la sortie son.</p>
+<ul>
+<li><code>Raspberry Pi Zero, 3B, 4B</code> : module IQaudio Zero : <a href="../recettes/iqaudio_zero/">voir la recette IQaudio Zero</a></li>
+<li><code>Raspberry Pi 2 / 3 / 4</code> : amplificateur audio et haut-parleur intégré (enceinte de bureau, enceinte blutooth)</li>
+</ul>
 <h2 id="programme">Programme</h2>
 <p>Les sources sont ici : 
 <a href="https://github.com/balises-ouistici/rtlsdr-nfs32002">github.com/balises-ouistici/rtlsdr-nfs32002</a></p>

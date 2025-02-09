@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://balises-sonores.github.io/recettes/configuration/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Configuration de la balise (Raspberry Pi) - Balises Sonores Ouistici</title>
+    <title>Configurer la balise (Raspberry Pi) - Balises Sonores Ouistici</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Configuration de la balise (Raspberry Pi)";
+        var mkdocs_page_name = "Configurer la balise (Raspberry Pi)";
         var mkdocs_page_input_path = "recettes/configuration.md";
         var mkdocs_page_url = "/recettes/configuration/";
       </script>
@@ -98,15 +98,15 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../circuitpython/">Configurer un microcontrôleur pour CircuitPython</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Configuration de la balise (Raspberry Pi)</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Configurer la balise (Raspberry Pi)</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#connection-automatique-a-un-routeur-wifi">Connection automatique à un routeur Wifi</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#bouton-darret">Bouton d'arrêt</a>
+    <li class="toctree-l2"><a class="reference internal" href="#bouton-darret-halt">Bouton d'arrêt (halt)</a>
     </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../iqaudio_zero/">configurer le module IQaudio Zero</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../iqaudio_zero/">Configurer le module IQaudio Zero</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../materiel/">Matériel</a>
                   </li>
@@ -130,7 +130,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Documents"></a></li>
           <li class="breadcrumb-item">Recettes</li>
-      <li class="breadcrumb-item active">Configuration de la balise (Raspberry Pi)</li>
+      <li class="breadcrumb-item active">Configurer la balise (Raspberry Pi)</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -139,7 +139,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="configuration-de-la-balise-raspberry-pi">Configuration de la balise (Raspberry Pi)</h1>
+                <h1 id="configurer-la-balise-raspberry-pi">Configurer la balise (Raspberry Pi)</h1>
 <h2 id="connection-automatique-a-un-routeur-wifi">Connection automatique à un routeur Wifi</h2>
 <p>Écrire dans le fichier <code>/etc/wpa_supplicant/wpa_supplicant.conf</code> :</p>
 <pre><code>network={
@@ -151,7 +151,7 @@ network={
    psk=&quot;SecretPassWord2&quot;
 }
 </code></pre>
-<h2 id="bouton-darret">Bouton d'arrêt</h2>
+<h2 id="bouton-darret-halt">Bouton d'arrêt (halt)</h2>
 <p>Ajouter ou décommenter cette ligne dans le fichier <code>/boot/firmware/config.txt</code> (ou <code>/boot/config.txt</code>) :</p>
 <pre><code># halt button
 dtoverlay=gpio-shutdown,gpio_pin=27,debounce=800
@@ -162,7 +162,7 @@ dtoverlay=gpio-shutdown,gpio_pin=27,debounce=800
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
         <a href="../circuitpython/" class="btn btn-neutral float-left" title="Configurer un microcontrôleur pour CircuitPython"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
-        <a href="../iqaudio_zero/" class="btn btn-neutral float-right" title="configurer le module IQaudio Zero">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../iqaudio_zero/" class="btn btn-neutral float-right" title="Configurer le module IQaudio Zero">Suivant <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
