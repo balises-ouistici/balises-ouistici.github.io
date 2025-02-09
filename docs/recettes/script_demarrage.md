@@ -1,5 +1,11 @@
 # Lancer un script au démarrage du Raspberry Pi
 
+## Avec un service systemd (recommandé)
+
+(à compléter)
+
+## Avec le fichier rc.local (plus rapide)
+
 Éditer le fichier `/etc/rc.local`, en ajoutant votre commande juste au-dessus de la ligne `exit 0`.
 
 Pour lancer un script Python par exemple, le fichier pourra ressembler à cela :
