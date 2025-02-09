@@ -24,5 +24,5 @@ Ajouter ou décommenter cette ligne dans le fichier `/boot/firmware/config.txt` 
 dtoverlay=gpio-shutdown,gpio_pin=27,debounce=800
 ```
 
+La broche numéro 27 correspond au bouton installé sur le module IQaudio Zero.
 Vous pouvez adapter le gpio_pin à la broche GPIO sur laquelle le bouton d'arrêt est branché.
-
