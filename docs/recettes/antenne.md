@@ -22,9 +22,11 @@ Longueur antenne = 299 792 458 / 868 300 000
 En réalité, nous pouvons utiliser des longueurs plus petites en divisant par 2, 4, 8..
 En diminuant la longueur de l'antenne, on perd tout de même en force du signal.
 
-Nous utiliserons la moitié de la longueur calculée, soit :
+Le multiple utilisé affecte aussi la directivité de l'antenne. (source [antenna-theory.com](https://antenna-theory.com/basics/directivity.php))
+La communication des objets connectés peut interférer avec la bande radio utilisée par les balises sonores. Dans ce contexte, un antenne plus directive permet d'obtenir des erreurs de transmission moindres (source Mohammad Rahal).
+
+Nous préconisons l'utilisation de la moitié de la longueur calculée, soit :
 
 ```
 34,5 cm / 2 = 17,3 cm (centimètres)
 ```
- 
