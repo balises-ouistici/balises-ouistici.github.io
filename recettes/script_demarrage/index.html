@@ -106,6 +106,10 @@
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Lancer un script au démarrage du Raspberry Pi</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#avec-un-service-systemd-recommande">Avec un service systemd (recommandé)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#avec-le-fichier-rclocal-plus-rapide">Avec le fichier rc.local (plus rapide)</a>
+    </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../traitement_sons/">Traitement des sons</a>
@@ -136,6 +140,9 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="lancer-un-script-au-demarrage-du-raspberry-pi">Lancer un script au démarrage du Raspberry Pi</h1>
+<h2 id="avec-un-service-systemd-recommande">Avec un service systemd (recommandé)</h2>
+<p>(à compléter)</p>
+<h2 id="avec-le-fichier-rclocal-plus-rapide">Avec le fichier rc.local (plus rapide)</h2>
 <p>Éditer le fichier <code>/etc/rc.local</code>, en ajoutant votre commande juste au-dessus de la ligne <code>exit 0</code>.</p>
 <p>Pour lancer un script Python par exemple, le fichier pourra ressembler à cela :</p>
 <pre><code>...
