@@ -2,92 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://balises-sonores.github.io/</loc>
-         <lastmod>2023-09-06</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-02-09</lastmod>
     </url>
     <url>
          <loc>https://balises-sonores.github.io/glossaire/</loc>
-         <lastmod>2023-09-06</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-02-09</lastmod>
     </url>
     <url>
          <loc>https://balises-sonores.github.io/questions/</loc>
-         <lastmod>2023-09-06</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-02-09</lastmod>
     </url>
     <url>
          <loc>https://balises-sonores.github.io/Balise%20Cpp-CC1101/</loc>
-         <lastmod>2023-09-06</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-02-09</lastmod>
     </url>
     <url>
          <loc>https://balises-sonores.github.io/Balise%20Pico-CC1101/</loc>
-         <lastmod>2023-09-06</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-02-09</lastmod>
     </url>
     <url>
          <loc>https://balises-sonores.github.io/Balise%20RTL-SDR/</loc>
-         <lastmod>2023-09-06</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-02-09</lastmod>
+    </url>
+    <url>
+         <loc>https://balises-sonores.github.io/Configuration%20avec%20OusticiBaliseConfig/</loc>
+         <lastmod>2025-02-09</lastmod>
     </url>
     <url>
          <loc>https://balises-sonores.github.io/club%20microlyc%C3%A9e/</loc>
-         <lastmod>2023-09-06</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-02-09</lastmod>
     </url>
     <url>
          <loc>https://balises-sonores.github.io/hackaton/</loc>
-         <lastmod>2023-09-06</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-02-09</lastmod>
     </url>
     <url>
          <loc>https://balises-sonores.github.io/hackaton/1-chantiers/</loc>
-         <lastmod>2023-09-06</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-02-09</lastmod>
     </url>
     <url>
          <loc>https://balises-sonores.github.io/hackaton/2-transports/</loc>
-         <lastmod>2023-09-06</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-02-09</lastmod>
     </url>
     <url>
          <loc>https://balises-sonores.github.io/hackaton/3-smartphone/</loc>
-         <lastmod>2023-09-06</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-02-09</lastmod>
     </url>
     <url>
          <loc>https://balises-sonores.github.io/hackaton/4-pcb/</loc>
-         <lastmod>2023-09-06</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-02-09</lastmod>
     </url>
     <url>
          <loc>https://balises-sonores.github.io/hackaton/bilan/</loc>
-         <lastmod>2023-09-06</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-02-09</lastmod>
     </url>
     <url>
          <loc>https://balises-sonores.github.io/recettes/antenne/</loc>
-         <lastmod>2023-09-06</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-02-09</lastmod>
     </url>
     <url>
          <loc>https://balises-sonores.github.io/recettes/circuitpython/</loc>
-         <lastmod>2023-09-06</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-02-09</lastmod>
+    </url>
+    <url>
+         <loc>https://balises-sonores.github.io/recettes/configuration/</loc>
+         <lastmod>2025-02-09</lastmod>
+    </url>
+    <url>
+         <loc>https://balises-sonores.github.io/recettes/iqaudio_zero/</loc>
+         <lastmod>2025-02-09</lastmod>
     </url>
     <url>
          <loc>https://balises-sonores.github.io/recettes/materiel/</loc>
-         <lastmod>2023-09-06</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-02-09</lastmod>
     </url>
     <url>
          <loc>https://balises-sonores.github.io/recettes/script_demarrage/</loc>
-         <lastmod>2023-09-06</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-02-09</lastmod>
     </url>
     <url>
          <loc>https://balises-sonores.github.io/recettes/traitement_sons/</loc>
-         <lastmod>2023-09-06</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2025-02-09</lastmod>
     </url>
 </urlset>

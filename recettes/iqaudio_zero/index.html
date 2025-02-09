@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://balises-sonores.github.io/recettes/circuitpython/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://balises-sonores.github.io/recettes/iqaudio_zero/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Configurer un microcontrôleur pour CircuitPython - Balises Sonores Ouistici</title>
+    <title>configurer le module IQaudio Zero - Balises Sonores Ouistici</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Configurer un microcontr\u00f4leur pour CircuitPython";
-        var mkdocs_page_input_path = "recettes/circuitpython.md";
-        var mkdocs_page_url = "/recettes/circuitpython/";
+        var mkdocs_page_name = "configurer le module IQaudio Zero";
+        var mkdocs_page_input_path = "recettes/iqaudio_zero.md";
+        var mkdocs_page_url = "/recettes/iqaudio_zero/";
       </script>
     
     <!--[if lt IE 9]>
@@ -96,13 +96,15 @@
               <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../antenne/">Longueur de l'antenne</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Configurer un microcontrôleur pour CircuitPython</a>
-    <ul class="current">
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../circuitpython/">Configurer un microcontrôleur pour CircuitPython</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../configuration/">Configuration de la balise (Raspberry Pi)</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../iqaudio_zero/">configurer le module IQaudio Zero</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">configurer le module IQaudio Zero</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#tester-un-haut-parleur">Tester un haut-parleur</a>
+    </li>
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../materiel/">Matériel</a>
                   </li>
@@ -126,7 +128,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Documents"></a></li>
           <li class="breadcrumb-item">Recettes</li>
-      <li class="breadcrumb-item active">Configurer un microcontrôleur pour CircuitPython</li>
+      <li class="breadcrumb-item active">configurer le module IQaudio Zero</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -135,23 +137,32 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="configurer-un-microcontroleur-pour-circuitpython">Configurer un microcontrôleur pour CircuitPython</h1>
-<ol>
-<li>Télécharger le fichier adapté à votre microcontrôleur <a href="https://circuitpython.org/downloads">sur le site CircuitPython</a> (format <code>.UF2</code>)</li>
-</ol>
-<p>Une fois le fichier télechargé :
-- Garder appuyé le bouton "BOOTSEL" du Rasberry Pico, brancher le Rasberry Pico à l'ordinateur, puis relacher le bouton
-- Un dossier Rapsberry Pico s'ouvre
-- Déplacer le fichier téléchargé (.uf2) dans le dossier du Rasberry Pico</p>
-<p>Votre carte est prête à recevoir un programme en CircuitPython.</p>
-<p>Un dossier est accessible depuis votre ordinateur pour y mettre les programmes ainsi que tout fichier utile (sons par exemple).</p>
-<p>Vous pouvez utiliser le <a href="https://codewith.mu/en/download">logiciel Mu</a> pour écrire vos programmes en CircuitPython.</p>
+                <h1 id="configurer-le-module-iqaudio-zero">configurer le module IQaudio Zero</h1>
+<p>Ce module permet d'ajouter une sortie son analogique à un Raspberry Pi, pour brancher directement un haut-parleur, ou avoir une sortie ligne.</p>
+<p>Récupérez les fichiers de configurations proposés par IQaudio :</p>
+<pre><code>git clone https://github.com/iqaudio/Pi-Codec.git
+</code></pre>
+<p>Appliquez le profil qui convient (lecture seule ici) :</p>
+<pre><code>cd Pi-Codec
+sudo alsactl restore -f Codec_Zero_Playback_only.state
+
+</code></pre>
+<h2 id="tester-un-haut-parleur">Tester un haut-parleur</h2>
+<p>Branchez un haut-parleur.</p>
+<p>Testez le haut-parleur branché avec un son synthétique :</p>
+<pre><code>speaker-test -t wav -c 1
+</code></pre>
+<p>Quittez le test avec les touches <code>Ctrl-C</code>.</p>
+<p>Vous pouvez aussi tester le haut-parleur avec un fichier de votre choix :</p>
+<pre><code>aplay test.wav
+</code></pre>
+<p>La commande <code>alsamixer</code> permet de régler le volume.</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Navigation de pied de page">
-        <a href="../antenne/" class="btn btn-neutral float-left" title="Longueur de l'antenne"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
-        <a href="../configuration/" class="btn btn-neutral float-right" title="Configuration de la balise (Raspberry Pi)">Suivant <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../configuration/" class="btn btn-neutral float-left" title="Configuration de la balise (Raspberry Pi)"><span class="icon icon-circle-arrow-left"></span> Précédent</a>
+        <a href="../materiel/" class="btn btn-neutral float-right" title="Matériel">Suivant <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -175,10 +186,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../antenne/" style="color: #fcfcfc">&laquo; Précédent</a></span>
+      <span><a href="../configuration/" style="color: #fcfcfc">&laquo; Précédent</a></span>
     
     
-      <span><a href="../configuration/" style="color: #fcfcfc">Suivant &raquo;</a></span>
+      <span><a href="../materiel/" style="color: #fcfcfc">Suivant &raquo;</a></span>
     
   </span>
 </div>

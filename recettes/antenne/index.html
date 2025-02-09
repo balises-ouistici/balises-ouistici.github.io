@@ -67,6 +67,11 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../Balise%20RTL-SDR/">Balise RTL-SDR</a>
                   </li>
               </ul>
+              <p class="caption"><span class="caption-text">Configuration avec OusticiBaliseConfig</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Configuration%20avec%20OusticiBaliseConfig/">Index</a>
+                  </li>
+              </ul>
               <p class="caption"><span class="caption-text">Club microlycée</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../club%20microlyc%C3%A9e/">CLUB Microlycée</a>
@@ -89,11 +94,15 @@
               </ul>
               <p class="caption"><span class="caption-text">Recettes</span></p>
               <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Longueur de l'antenne</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Longueur de l'antenne</a>
     <ul class="current">
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../circuitpython/">Configurer un microcontrôleur pour CircuitPython</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../configuration/">Configuration de la balise (Raspberry Pi)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../iqaudio_zero/">configurer le module IQaudio Zero</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../materiel/">Matériel</a>
                   </li>
@@ -115,8 +124,8 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="../.." class="icon icon-home" aria-label="Documents"></a> &raquo;</li>
-          <li>Recettes &raquo;</li>
+    <li><a href="../.." class="icon icon-home" aria-label="Documents"></a></li>
+          <li class="breadcrumb-item">Recettes</li>
       <li class="breadcrumb-item active">Longueur de l'antenne</li>
     <li class="wy-breadcrumbs-aside">
     </li>
@@ -140,7 +149,9 @@
 </code></pre>
 <p>En réalité, nous pouvons utiliser des longueurs plus petites en divisant par 2, 4, 8..
 En diminuant la longueur de l'antenne, on perd tout de même en force du signal.</p>
-<p>Nous utiliserons la moitié de la longueur calculée, soit :</p>
+<p>Le multiple utilisé affecte aussi la directivité de l'antenne. (source <a href="https://antenna-theory.com/basics/directivity.php">antenna-theory.com</a>)
+La communication des objets connectés peut interférer avec la bande radio utilisée par les balises sonores. Dans ce contexte, un antenne plus directive permet d'obtenir des erreurs de transmission moindres (source Mohammad Rahal).</p>
+<p>Nous préconisons l'utilisation de la moitié de la longueur calculée, soit :</p>
 <pre><code>34,5 cm / 2 = 17,3 cm (centimètres)
 </code></pre>
               
@@ -158,7 +169,7 @@ En diminuant la longueur de l'antenne, on perd tout de même en force du signal.
       <p>Balises Ouistici, un projet des Petit⋅e⋅s Débrouillard⋅e⋅s Aura</p>
   </div>
 
-  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+  Générée avec <a href="https://www.mkdocs.org/">MkDocs</a> avec un <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a> fourni par <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
           
         </div>
